@@ -91,4 +91,6 @@ The purpose of this document is to show how to install and work with python.
     
     ![OS output for Fedora](../images/python-adhoc-fedora.png)
  
+1. To close the python terminal run `exit()`
+
 [**<--Back to main instructions**](../readme.md)
