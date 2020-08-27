@@ -160,25 +160,22 @@ use in this tutorial is the IntelliJ community edition.
 1. Click on the button **Add Python SDK...**
 1. Make sure **Virtual Environment** is clicked and highlighted
 
-    ![python sdk default values dialog](../images/intellij_configure_python_sdk_default_values.png)
+    ![python sdk default values dialog](../images/windows_intellij_select_new_virtual_environment.png)
 
 1. Make sure the option **New Environment** is selected.
 1. Click the **folder** button for the location.
 
-    ![location to new python virtual environment](../images/intellij_python_virtual_env_dialog_box.png)
+    ![location to new python virtual environment](../images/windows_intellij_python_sdk_location_box_before_changing_it.png)
 
 1. Select the **c:\python\applications\virtual_environments** path.
 1. At the end of the path, type **first_application_venv**
 
-    ![python new virtual environment selected](../images/intellij_python_selected_virtual_environment_selected.png)
+    ![python new virtual environment selected](../images/windows_intellij_python_sdk_location_box_after_changing_it.png)
 
 1. Select the **OK** button and wait for the virtual environment to be
    created.
 1. Select the **Apply** button
 1. On the left screen, under **Project Settings** select the **Project** item.
-
-    ![project_settings_no_sdk_configured](../images/intellij_python_selected_virtual_environment_selected.png)
-
 1. Under the right screen and **Project SDKs** select your python virtual
    environment.
 
