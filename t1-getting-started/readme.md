@@ -130,7 +130,7 @@ use in this tutorial is the IntelliJ community edition.
 1. On the next screen, you can choose to send statistics or not.
 1. On the next screen, select the button **Skip Remaining and Set Defaults**.
 1. Click on the button **Open or Import**.
-1. Select c:\python\applications\first_application
+1. Select the **c:\python\applications\first_application** path.
 
     ![home screen for first application](../images/first_application_intellij_home_screen.png)
 
@@ -167,7 +167,7 @@ use in this tutorial is the IntelliJ community edition.
 
     ![location to new python virtual environment](../images/intellij_python_virtual_env_dialog_box.png)
 
-1. Select the c:\python\applications\virtual_environments path.
+1. Select the **c:\python\applications\virtual_environments** path.
 1. At the end of the path, type **first_application_venv**
 
     ![python new virtual environment selected](../images/intellij_python_selected_virtual_environment_selected.png)
@@ -192,9 +192,6 @@ use in this tutorial is the IntelliJ community edition.
 1. Open up a terminal
 1. cd Documents
 1. mkdir -p python/applications/first_application
-
-    ![home screen for first application](../images/first_application_intellij_home_screen.png)
-
 1. mkdir -p python/applications/second_application
 1. mkdir -p python/applications/virtual_environments
 1. cd ../Downloads
@@ -241,7 +238,7 @@ use in this tutorial is the IntelliJ community edition.
 
     ![location to new python virtual environment](../images/intellij_python_virtual_env_dialog_box.png)
 
-1. Select the c:\python\applications\virtual_environments path.
+1. Select the **c:\python\applications\virtual_environments** path.
 1. At the end of the path, type **first_application_venv**
 
     ![python new virtual environment selected](../images/intellij_python_selected_virtual_environment_selected.png)
