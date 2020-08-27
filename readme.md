@@ -8,6 +8,7 @@ The purpose of the repo is to provide simple tutorials
 for programming with **python**.
 
 I've decided to create a simple tutorial for Python.  
+
 Python has been around since 1989. The language has evolved into one of the 
 most powerful and feature rich languages.  The language is simple to pick up 
 and allows people to automate tasks efficiently, eloquently, 
