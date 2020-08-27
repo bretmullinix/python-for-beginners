@@ -159,7 +159,7 @@ use in this tutorial is the IntelliJ community edition.
    environment.
 1. Select the **Apply** button, and then the **OK** button. 
 
-### Setting up the IDE on Fedora
+#### Setting up the IDE on Fedora
 
 :construction:
 
