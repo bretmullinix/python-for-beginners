@@ -238,7 +238,7 @@ use in this tutorial is the IntelliJ community edition.
 
     ![location to new python virtual environment](../images/intellij_python_virtual_env_dialog_box.png)
 
-1. Select the **c:\python\applications\virtual_environments** path.
+1. Select the **~/Documents/python/applications/virtual_environments** path.
 1. At the end of the path, type **first_application_venv**
 
     ![python new virtual environment selected](../images/intellij_python_selected_virtual_environment_selected.png)
