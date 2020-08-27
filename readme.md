@@ -27,11 +27,7 @@ based on evaluation.  No language is the best for everything.
 
 ## Prerequisites
 
-Python 3 will be needed for this tutorial.
-
-### Install Python on Windows
-
-### Install Python on Centos
+Windows, Fedora, or Centos operating systems.
 
 ## Tutorials
 
