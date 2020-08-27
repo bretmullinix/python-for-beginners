@@ -158,13 +158,10 @@ use in this tutorial is the IntelliJ community edition.
 1. Under the right screen and **Project SDKs** select your python virtual
    environment.
 1. Select the **Apply** button, and then the **OK** button. 
-1. Click on the "Download" button.
-1. On the right panel, wait until the Java Open JDK is installed.
-1. Click on the **Apply** button
-1. Add another SDK by selecting the **+** button.
 
+### Setting up the IDE on Fedora
 
-
+:construction:
 
 
 
