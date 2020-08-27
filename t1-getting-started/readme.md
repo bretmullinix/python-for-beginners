@@ -132,7 +132,7 @@ use in this tutorial is the IntelliJ community edition.
 1. Click on the button **Open or Import**.
 1. Select the **c:\python\applications\first_application** path.
 
-    ![home screen for first application](../images/first_application_intellij_home_screen.png)
+    ![home screen for first application](../images/windows_intellij_first_application_screen.png)
 
 1. In the screen that appears you should see the **Project** explorer window 
    on the left part of the screen.  The **Project** explorer window shows
