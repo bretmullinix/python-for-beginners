@@ -155,7 +155,7 @@ use in this tutorial is the IntelliJ community edition.
 
 1. On the right panel, select the **+** button.
 
-    ![platform settings no sdk select plus button](../images/intellij_project_settings_no_sdk_select_plus_button.png)
+    ![platform settings no sdk select plus button](../images/windows_select_python_sdk.png)
 
 1. Click on the button **Add Python SDK...**
 1. Make sure **Virtual Environment** is clicked and highlighted
