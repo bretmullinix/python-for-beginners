@@ -107,9 +107,9 @@ use in this tutorial is the IntelliJ community edition.
 
 #### Setting up the IDE on Windows
 
-1. Download the windows installer [here](https://www.jetbrains.com/idea/download/#section=linux).
+1. Download the windows installer [here](https://www.jetbrains.com/idea/download/#section=windows).
 1. Download the **Community** edition
-1. Open up a command prompt
+1. Open up a terminal
 1. cd c:\
 1. mkdir python
 1. cd python
@@ -131,6 +131,9 @@ use in this tutorial is the IntelliJ community edition.
 1. On the next screen, select the button **Skip Remaining and Set Defaults**.
 1. Click on the button **Open or Import**.
 1. Select c:\python\applications\first_application
+
+    ![home screen for first application](../images/first_application_intellij_home_screen.png)
+
 1. In the screen that appears you should see the **Project** explorer window 
    on the left part of the screen.  The **Project** explorer window shows
    a tree with the **first_application** folder.
@@ -139,27 +142,123 @@ use in this tutorial is the IntelliJ community edition.
 1. Select the **File** menu, and then the menu item **Settings**
 1. Select the **Plugins** option on the left screen.
 1. In the **Type/to see options** box, type **python**
+
+    ![install python plugin screen](../images/intellij-install-python-plugin.png)
+
 1. Select the **Python Community Edition** plugin and wait for it to
    install.
 1. Click the **OK** button.
 1. Select the **File** menu, and then the menu item **Project Structure**.
 1. Under **Platform Settings**, select **SDKs**
+
+    ![platform settings no sdk](../images/platform_settings_sdk_no_sdk_set.png)
+
 1. On the right panel, select the **+** button.
+
+    ![platform settings no sdk select plus button](../images/intellij_project_settings_no_sdk_select_plus_button.png)
+
 1. Click on the button "Add Python SDK..."
 1. Make sure **Virtual Environment** is clicked and highlighted
+
+    ![python sdk default values dialog](../images/intellij_configure_python_sdk_default_values.png)
+
 1. Make sure the option "New Environment" is selected.
 1. Click the **folder** button for the location.
+
+    ![location to new python virtual environment](../images/intellij_python_virtual_env_dialog_box.png)
+
 1. Select the c:\python\applications\virtual_environments path.
 1. At the end of the path, type "first_application_venv"
+
+    ![python new virtual environment selected](../images/intellij_python_selected_virtual_environment_selected.png)
+
 1. Select the "OK" button and wait for the virtual environment to be
    created.
 1. Select the "Apply" button
 1. On the left screen, under **Project Settings** select the **Project** item.
+
+    ![project_settings_no_sdk_configured](../images/intellij_python_selected_virtual_environment_selected.png)
+
 1. Under the right screen and **Project SDKs** select your python virtual
    environment.
+
+    ![project settings sdk being selected](../images/platform_settings_sdk_being_selected.png)
+
 1. Select the **Apply** button, and then the **OK** button. 
 
 #### Setting up the IDE on Fedora
+1. Download the windows installer [here](https://www.jetbrains.com/idea/download/#section=linux).
+1. Download the **Community** edition
+1. Open up a terminal
+1. cd Documents
+1. mkdir -p python/applications/first_application
+
+    ![home screen for first application](../images/first_application_intellij_home_screen.png)
+
+1. mkdir -p python/applications/second_application
+1. mkdir -p python/applications/virtual_environments
+1. cd ../Downloads
+1. tar -xvf **ideaIC...tar.gz** file.
+1. cd **ideaIC...** folder. In my case, the folder was called **idea-IC-202.6948.69**
+1. cd bin
+1. Type **./idea.sh**
+1. On the screen that comes up, select the button **Skip Remaining and Set Defaults**.
+1. Click on the button **Open or Import**.
+1. Select the path **~/Documents/python/applications/first_applications**
+
+    ![home screen for first application](../images/first_application_intellij_home_screen.png)
+
+1. In the screen that appears you should see the **Project** explorer window
+   on the left part of the screen.  The **Project** explorer window shows
+   a tree with the **first_application** folder.
+1. Within the **Project** explorer window, highlight the **first_application**
+   folder
+1. Select the **File** menu, and then the menu item **Settings**
+1. Select the **Plugins** option on the left screen.
+1. In the **Type/to see options** box, type **python**
+
+    ![install python plugin screen](../images/intellij-install-python-plugin.png)
+
+1. Select the **Python Community Edition** plugin and wait for it to
+   install.
+1. Click the **OK** button.
+1. Select the **File** menu, and then the menu item **Project Structure**.
+1. Under **Platform Settings**, select **SDKs**
+
+    ![platform settings no sdk](../images/platform_settings_sdk_no_sdk_set.png)
+
+1. On the right panel, select the **+** button.
+
+    ![platform settings no sdk select plus button](../images/intellij_project_settings_no_sdk_select_plus_button.png)
+
+1. Click on the button "Add Python SDK..."
+1. Make sure **Virtual Environment** is clicked and highlighted
+
+    ![python sdk default values dialog](../images/intellij_configure_python_sdk_default_values.png)
+
+1. Make sure the option "New Environment" is selected.
+1. Click the **folder** button for the location.
+
+    ![location to new python virtual environment](../images/intellij_python_virtual_env_dialog_box.png)
+
+1. Select the c:\python\applications\virtual_environments path.
+1. At the end of the path, type "first_application_venv"
+
+    ![python new virtual environment selected](../images/intellij_python_selected_virtual_environment_selected.png)
+
+1. Select the "OK" button and wait for the virtual environment to be
+   created.
+1. Select the "Apply" button
+1. On the left screen, under **Project Settings** select the **Project** item.
+
+    ![project_settings_no_sdk_configured](../images/intellij_python_selected_virtual_environment_selected.png)
+
+1. Under the right screen and **Project SDKs** select your python virtual
+   environment.
+
+    ![project settings sdk being selected](../images/platform_settings_sdk_being_selected.png)   
+
+1. Select the **Apply** button, and then the **OK** button. 
 
 :construction:
 
