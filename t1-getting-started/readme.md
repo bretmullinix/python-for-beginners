@@ -187,7 +187,7 @@ use in this tutorial is the IntelliJ community edition.
 1. Select the **Apply** button, and then the **OK** button. 
 
 #### Setting up the IDE on Fedora
-1. Download the windows installer [here](https://www.jetbrains.com/idea/download/#section=linux).
+1. Download the linux distribution [here](https://www.jetbrains.com/idea/download/#section=linux).
 1. Download the **Community** edition
 1. Open up a terminal
 1. cd Documents
