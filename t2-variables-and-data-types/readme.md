@@ -128,6 +128,11 @@ Floats are numbers with fractions.  For instance, the number **17** is not a flo
        The variable is the third angle in a triangle we are defining.  When writing code, use a descriptive
        variable name so when you or someone else comes back to maintain the code, the variable clearly documents
        its intent.
+
+    1. The rest of the code simply takes the variables, like in the integer example, and prints out messages
+       about the triangle.
+
+    1. The output is shown in the lower window in the image above.
  
 
 
