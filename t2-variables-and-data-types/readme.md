@@ -105,6 +105,31 @@ Floats are numbers with fractions.  For instance, the number **17** is not a flo
 
     ![t2-float-code-and-output](../images/t2-data-type-float.png)
 
+    Lets break down the code:
+
+    1. The line `first_angle_in_triangle = 28.9` creates a variable called **first_angle_in_triangle**
+       and assigns the variable a value of **28.9**.  Once the variable is assigned the value, the
+       variable becomes a **float** data type.  Also, notice the variable is named for what the value is.
+       The variable is the first angle in a triangle we are defining.  When writing code, use a descriptive
+       variable name so when you or someone else comes back to maintain the code, the variable clearly documents
+       its intent. 
+    
+    1. The line `second_angle_in_triangle = 45.5` creates a variable called **second_angle_in_triangle**
+       and assigns the variable a value of **45.5**.  Once the variable is assigned the value, the
+       variable becomes a **float** data type.  Also, notice the variable is named for what the value is.
+       The variable is the second angle in a triangle we are defining.  When writing code, use a descriptive
+       variable name so when you or someone else comes back to maintain the code, the variable clearly documents
+       its intent.
+
+    1. The line `third_angle_in_triangle = 180 - first_angle_in_triangle - second_angle_in_triangle` 
+       creates a variable called **third_angle_in_triangle** and assigns the variable a calculated
+       value based on the knowledge that a triangle is 180 degrees.  Once the variable is assigned the value, the
+       variable becomes a **float** data type.  Also, notice the variable is named for what the value is.
+       The variable is the third angle in a triangle we are defining.  When writing code, use a descriptive
+       variable name so when you or someone else comes back to maintain the code, the variable clearly documents
+       its intent.
+ 
+
 
 
 
