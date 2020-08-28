@@ -37,7 +37,7 @@ create a new Python file as is shown below.
 
 1. Type the following in your python file.
 
-    ![t2-working-with-integers](../working_wiith_integers.png)
+    ![t2-working-with-integers](../images/working_with_integers.png)
 
     Lets break down the code:
 
