@@ -1,10 +1,11 @@
-# Working with Python
+# Working with Python: Getting started with Python
 
-Last updated: 08.27.2020
+Last updated: 08.28.2020
 
 ## Purpose
 
-The purpose of this document is to show how to install and work with python.
+The purpose of this tutorial is to show how to setup Python 3 on your machine, run adhoc commands, and
+set up an Integrated Development Enviorment (IDE) for Python to improve your productivity.
 
 ## Prerequisites
 
