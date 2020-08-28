@@ -27,6 +27,12 @@ create a new Python file as is shown below.
 
     ![t2-create-new-python-file](../images/t2-first-application-new-python-file-context-menu.png)
 
+1. Name the new file **variables_and_data_types.py**.  Your screen should appear like the screenshot below.
+   On the left **Project** window, your python file is highlighted.  On the right window, your Python file
+   appears.  This is where we will enter our code.
+
+    ![t2-variables-and-data-types-file-created](../images/t2-variables-and-datatypes-python-file-created.png)
+
 :construction:
 
 
