@@ -86,6 +86,21 @@ create a new Python file as is shown below.
        separated by a space.  The **arguments** are the string **literal** 'In', the variable **add_years**,
        the string **literal** 'years.', the string **literal** 'I will be', and the variable **future_age**.
 
+1. Click the **variabls_and_data_types.py** file name in the **Project** window.
+1. Right click **variables_and_data_types.py** file name in the **Project** window.
+1. In the context menu that appears, click the run menu item as is shown below.
+
+    ![t2-context-menu-run-python-variables-and-data-types](../images/t2-run-python-context-menu-variables-and-datatypes.png)
+
+1. You should get the output shown below.
+
+    ![t2-output-integer-code](../images/t2-output-integer-code.png)
+
+
+
+
+
+
 :construction:
 
 
