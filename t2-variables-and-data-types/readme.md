@@ -97,6 +97,13 @@ create a new Python file as is shown below.
     ![t2-output-integer-code](../images/t2-output-integer-code.png)
 
 
+## Working with floats
+
+Floats are numbers with fractions.  For instance, the number **17** is not a float, but the number **17.1** is.
+
+1. Add the float code below to your python file, and run the python file like was shown above.
+
+    ![t2-float-code-and-output](../images/t2-data-type-float.png)
 
 
 
