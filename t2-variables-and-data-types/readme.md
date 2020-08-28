@@ -4,7 +4,12 @@ Last updated: 08.28.2020
 
 ## Purpose
 
-The purpose of this tutorial is to show how to work with variables and data types.
+The purpose of this tutorial is to show how to work with variables and data types.   
+
+- **Variables** are locations in memory that store values with a data type. For instance, a variable assigned the
+  value of **35** stores the integer in a location in memory.
+
+- **Data types** are the classification of a value. For instance, the number **35** is an integer data type.
 
 ## Prerequisites
 
@@ -33,6 +38,8 @@ create a new Python file as is shown below.
 
     ![t2-variables-and-data-types-file-created](../images/t2-variables-and-datatypes-python-file-created.png)
 
+
+
 ### Working with Integers
 
 1. Type the following in your python file.
@@ -54,8 +61,8 @@ create a new Python file as is shown below.
        by a space.  The **arguments** are the string **literal** 'I am',
        the variable **current_age**, and the string **literal** 'years old.'.
 
-        1. **method** = A **method** is a block of code that is called by a name.  In the case above, the
-           **method** was called **print**.
+        1. **method** = A method is a block of code that is called by a name.  In the case above, the
+           method is called **print**.
 
         1. **argument** = An argument is a value given to one of the method **parameters**.  One of the arguments
            above is the **variable current_age**.  The variable has a value of **35** when it is passed into
