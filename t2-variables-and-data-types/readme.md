@@ -21,6 +21,12 @@ Python and IntelliJ for future tutorials.
     folder should be visible. If the **first_application** folder is not open, go to the **File** menu,
     click on the **Open..** menu item, and navigate to the **first_application** folder.
 
+1. Highlight the folder **first_application** in the **Project** window.
+1. Right click on **first_application**, select the menu item **New** and the sub menu **Python File** to
+create a new Python file as is shown below.
+
+    ![t2-create-new-python-file](../images/t2-first-application-new-python-file-context-menu.png)
+
 :construction:
 
 
