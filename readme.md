@@ -41,7 +41,7 @@ The tutorials in this repo are as follows:
 
 1. **Working with varaibles and data types**
 
-    Show the user how to work with different variables and data types.
-    The tutorial is located in the [**t2-variables-and-data-types**](./t2-variables-and-data-types) 
+    Shows the user how to work with different variables and data types.
+    The tutorial is located in the [**t2-variables-and-data-types**](./t2-variables-and-data-types) folder.
 
 :construction:
