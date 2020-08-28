@@ -62,7 +62,7 @@ create a new Python file as is shown below.
            the **print** method.
 
         1. **parameter** = A **method** can have one or more variables passed in.  The variable passed in
-           is called a **parameter**
+           is called a **parameter**.
 
         1. **literal** = A literal is a fixed value like 'I am' or 35.  The value doesn't change like
            a variable can.
