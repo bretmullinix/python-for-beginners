@@ -15,6 +15,12 @@ Python and IntelliJ for future tutorials.
 
 1. Open up your IntelliJ application. 
 
+    ![t2-open-intellij](../images/t2-opening_up_intellij.png)
+
+    On the left part of the screen, you should see the **Project** window and the **first_application**
+    folder should be visible. If the **first_application** folder is not open, go to the **File** menu,
+    click on the **Open..** menu item, and navigate to the **first_application** folder.
+
 :construction:
 
 
