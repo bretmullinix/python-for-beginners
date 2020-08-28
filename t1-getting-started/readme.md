@@ -255,7 +255,9 @@ use in this tutorial is the IntelliJ community edition.
 
 1. Select the **Apply** button, and then the **OK** button. 
 
-:construction:
+
+You have finished setting up Python, ran adhoc commands, and you have setup your IntelliJ IDE to make
+yourself more productive.  Please go back to the main instructions and continue your tutorials.
 
 
 
