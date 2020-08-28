@@ -58,7 +58,7 @@ create a new Python file as is shown below.
            **method** was called **print**.
 
         1. **argument** = An argument is a value given to one of the method **parameters**.  One of the arguments
-           above was the **variable current_age**.  The variable had a value of **35** when it was passed into
+           above is the **variable current_age**.  The variable has a value of **35** when it is passed into
            the **print** method.
 
         1. **parameter** = A **method** can have one or more variables passed in.  The variable passed in
