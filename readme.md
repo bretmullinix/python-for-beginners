@@ -39,7 +39,7 @@ The tutorials in this repo are as follows:
     and run adhoc **python** commands.  The tutorial is located in the
     [**t1-getting-started**](./t1-getting-started) folder.
 
-1. **Working with varaibles and data types**
+1. **Working with variables and data types**
 
     Shows the user how to work with different variables and data types.
     The tutorial is located in the [**t2-variables-and-data-types**](./t2-variables-and-data-types) folder.
