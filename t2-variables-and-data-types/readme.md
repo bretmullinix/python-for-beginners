@@ -133,12 +133,50 @@ Floats are numbers with fractions.  For instance, the number **17** is not a flo
        about the triangle.
 
     1. The output is shown in the lower window in the image above.
- 
+
+## Working with strings
+
+Strings are a finite set of characters from an alphabet.  Examples of strings were given above.
+
+1. Add the string code below to your python file, and run the python file like was shown below.
+
+    ![t2-string-code-and-output](../images/t2_string_data_type.png)
+
+    Lets break down the code:
+
+    1. The line `first_name_of_a_person = "Mike"` creates a variable called **first_name_of_a_person** 
+       and assigns the variable a value of **Mike**.  The quotes around the the value are required 
+       to delineate the start and end of the string.  The quotes can be single or double quotes.  
+       Once the variable is assigned the value, the variable becomes a **string** data type.  Also, notice
+       the variable is named for what the value is.  The variable is the first name of a person.  When
+       writing code, use a descriptive variable name so when you or someone else comes back to maintain
+       the code, the variable clearly documents its intent.
+
+    1. The line `last_name_of_a_person = "Smith"` creates a variable called **last_name_of_a_person** 
+       and assigns the variable a value of **Smith**.  The quotes around the the value are required 
+       to delineate the start and end of the string.  The quotes can be single or double quotes.  
+       Once the variable is assigned the value, the variable becomes a **string** data type.  Also, notice
+       the variable is named for what the value is.  The variable is the last name of a person.  When
+       writing code, use a descriptive variable name so when you or someone else comes back to maintain
+       the code, the variable clearly documents its intent.
+
+    1. The line `full_name_of_a_person = first_name_of_a_person + " " + last_name_of_a_person"` creates 
+       a variable called **full_name_of_a_person** and assigns the variable a calculated value.  
+       The calculated value is the variable **first_name_of_a_person** added 
+       (this is typically called **concatenated** instead of added when talking about strings) 
+       to a space and the variable **last_name_of_a_person**. Once the variable is assigned the value, 
+       the variable becomes a **string** data type.  Also, notice the variable is named for what the value is.  
+       The variable is the full name of a person.  When writing code, use a descriptive variable name so when you or      
+       someone else comes back to maintain the code, the variable clearly documents its intent.
+
+    1. The output is shown in the lower window in the image above.
 
 
+The tutorial on variables and data types has now been completed.  As you learn Python, you will come
+across many other Python data types.  I've only shown the **integer**, **float**, and **string** data
+types because those are the data types I've used most frequently through 20+ years in programming.
 
-
-:construction:
+To continue to learn more about Python, please proceed back to the main instructions.
 
 
 [**<--Back to main instructions**](../readme.md)
