@@ -1,6 +1,6 @@
 # Working with Python:  Learn about Variables and Data Types
 
-Last updated: 08.28.2020
+Last updated: 08.29.2020
 
 ## Purpose
 
