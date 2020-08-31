@@ -107,6 +107,37 @@ does not represent the intent of the object it represents, and variables could e
 copied and pasted in future code where a home address variable ended up being used where a work address
 variable was intended.  Let's build the same example using OOP.
 
+1. Create the python file **Address.py**.  Type the following code in the file.  The code represents
+   a Python class.  A Python class is a data type that can be used to represent real world objects.
+   For instance, this class is the **Address** class, and we plan on creating two instances of this class,
+   a **home** address and a **work** address.
+
+    ![t3-address-class.png](../images/t3-address-class.png) 
+
+    Lets break down the code:
+
+    1. The line `class Address:` declares the **Address** class.  Any code indented will belong to this class.
+    1. The line `def __init__(self, p_street, p_city, p_state, p_zip)` is a special method called a **constructor**
+       for a class.  For example, let's say you create an address using this class represented by the following code:
+       
+        ```
+        johns_address = Address('25 English Street', 'Ricksville', 'IL', '55555')
+        ```
+
+        When you say 'Address(....)', this calls the **\_\_init\_\_** method.   
+
+        The explanation of the assignment of values to parameters for John's address is below:
+
+        - The street '25 English Street' represents the value for the **p_street** parameter.
+        - The city 'Ricksville' represents the value for the **p_city** parameter.
+        - The state 'IL' represents the value for the **p_state** parameter.
+        - The zip '55555' represents the value for the **p_zip** parameter.
+
+        The **self** parameter in the **\_\_init\_\_** method is always the first parameter of every method
+        belonging to an instance (object) of the address class.  The **self** parameter is used to create
+        object (instance) variables and call other object (instance) methods of the address class.
+
+
 :construction:
 
 To continue to learn more about Python, please proceed back to the main instructions.
