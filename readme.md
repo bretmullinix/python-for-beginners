@@ -1,6 +1,6 @@
 # Working with Python
 
-Last updated: 08.28.2020
+Last updated: 08.31.2020
 
 ## Purpose
 
@@ -43,5 +43,11 @@ The tutorials in this repo are as follows:
 
     Shows the user how to work with different variables and data types.
     The tutorial is located in the [**t2-variables-and-data-types**](./t2-variables-and-data-types) folder.
+
+1. **Getting Started with Object Oriented Programming (OOP)**
+
+   Shows the user how to work with Object Oriented Programming (OOP).  Object oriented programming uses
+   real world objects (such as people, places, or things) to model your application(s).  The tutorial
+   is located in the [**t3-object-oriented-programming**](./t3-object-oriented-programming) folder.
 
 :construction:
