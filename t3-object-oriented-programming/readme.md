@@ -146,13 +146,16 @@ variable was intended.  Let's build the same example using OOP.
        is indented by one more tab then the method signature.
 
     1. The line `self.city = p_city` assigns the **p_city** parameter to the object (instance) variable
-       **self.city**.
+       **self.city**. This line is part of the **\_\_init\_\_** method because the line
+       is indented by one more tab then the method signature.
 
     1. The line `self.state = p_state` assigns the **p_state** parameter to the object (instance) variable
-       **self.state**.
+       **self.state**. This line is part of the **\_\_init\_\_** method because the line
+       is indented by one more tab then the method signature.
 
     1. The line `self.zip = p_zip` assigns the **p_zip** parameter to the object (instance) variable
-       **self.zip**.
+       **self.zip**. This line is part of the **\_\_init\_\_** method because the line
+       is indented by one more tab then the method signature.
 
     1. The line `def __str__(self):` is a special method that is called when you run the **print** method.
        The **print** method outputs the result of this method which is a **string** data type representation 
@@ -160,7 +163,7 @@ variable was intended.  Let's build the same example using OOP.
        print out the default implementation of this method.  The default implementation is not
        formatted well and prints details that would confuse a lot of people.  Our implementation prints
        out the object in the same format that the primitive variables used in the last section.
-       
+        
 
 
 :construction:
