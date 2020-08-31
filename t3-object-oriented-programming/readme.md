@@ -156,7 +156,7 @@ variable was intended.  Let's build the same example using OOP.
     1. The line `self.zip = p_zip` assigns the **p_zip** parameter to the object (instance) variable
        **self.zip**. This line is part of the **\_\_init\_\_** method because the line
        is indented by one more tab then the method signature.
-
+ 
     1. The line `def __str__(self):` is a special method that is called when you run the **print** method.
        The **print** method outputs the result of this method which is a **string** data type representation 
        of the object.  If this method is not created (implemented) by the developer, the **Address** object would 
@@ -164,7 +164,7 @@ variable was intended.  Let's build the same example using OOP.
        formatted well and prints details that would confuse a lot of people.  Our implementation prints
        out the object in the same format that the primitive variables used in the last section.
 
-         Also, notice how the line has the same number of indentions as the method constructor.
+         Also, notice how this line has the same number of indentions as the method constructor.
          This indicates that the method belongs to the class just like the constructor. Or another way
          you could tell the method belonged to the class is that the method was intented one more tab
          compared to the **Address:** line.  The **Address:** line is called the **class declaration**. 
