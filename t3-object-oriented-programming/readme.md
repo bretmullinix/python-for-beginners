@@ -166,7 +166,7 @@ variable was intended.  Let's build the same example using OOP.
 
          Also, notice how this line has the same number of indentions as the method constructor.
          This indicates that the method belongs to the class just like the constructor. Or another way
-         you could tell the method belonged to the class is that the method was intented one more tab
+         you could tell the method belonged to the class is that the method was indented one more tab
          compared to the **Address:** line.  The **Address:** line is called the **class declaration**. 
         
 
