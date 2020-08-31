@@ -126,7 +126,7 @@ variable was intended.  Let's build the same example using OOP.
 
         When you say 'Address(....)', this calls the **\_\_init\_\_** method.   
 
-        The explanation of the assignment of values to parameters for John's address is below:
+        Below is an explanation of the assignment of values to parameters for John's address:
 
         - The street '25 English Street' represents the value for the **p_street** parameter.
         - The city 'Ricksville' represents the value for the **p_city** parameter.
