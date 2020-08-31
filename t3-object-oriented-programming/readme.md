@@ -117,7 +117,7 @@ variable was intended.  Let's build the same example using OOP.
     Let's break down the code:
 
     1. The line `class Address:` declares the **Address** class.  Any code indented will belong to this class.
-    1. The line `def __init__(self, p_street, p_city, p_state, p_zip)` is a special method called a **constructor**
+    1. The line `def __init__(self, p_street, p_city, p_state, p_zip):` is a special method called a **constructor**
        for a class.  For example, let's say you create an address using this class represented by the following code:
        
         ```
@@ -136,6 +136,31 @@ variable was intended.  Let's build the same example using OOP.
         The **self** parameter in the **\_\_init\_\_** method is always the first parameter of every method
         belonging to an object (instance) of the address class.  The **self** parameter is used to create
         object (instance) variables and call other object (instance) methods of the address class.
+
+        This line is also known as the **method signature**.  The **method signature** defines what the
+        name of the method is and the parameters.  Optionally, the data types of the parameters
+        and the result can be added to the **method signature**.
+
+    1. The line `self.street = p_street` assigns the **p_street** parameter to the object (instance) 
+       variable **self.street**.  This line is part of the **\_\_init\_\_** method because the line
+       is indented by one more tab then the method signature.
+
+    1. The line `self.city = p_city` assigns the **p_city** parameter to the object (instance) variable
+       **self.city**.
+
+    1. The line `self.state = p_state` assigns the **p_state** parameter to the object (instance) variable
+       **self.state**.
+
+    1. The line `self.zip = p_zip` assigns the **p_zip** parameter to the object (instance) variable
+       **self.zip**.
+
+    1. The line `def __str__(self):` is a special method that is called when you run the **print** method.
+       The **print** method outputs the result of this method which is a **string** data type representation 
+       of the object.  If this method is not created (implemented) by the developer, the **Address** object would 
+       print out the default implementation of this method.  The default implementation is not
+       formatted well and prints details that would confuse a lot of people.  Our implementation prints
+       out the object in the same format that the primitive variables used in the last section.
+       
 
 
 :construction:
