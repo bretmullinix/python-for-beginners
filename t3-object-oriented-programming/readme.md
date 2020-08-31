@@ -46,7 +46,7 @@ We are going to first program a set of addresses using **primitive** data types.
 
     ![t2-working-with-integers](../images/t3-a-little-object-oriented-programming-with-the-primitives.png)
 
-    Lets break down the code:
+    Let's break down the code:
 
     1. The line `print ('Primitive Types to Represent Your Application ---->\n')` says to call the print method.
        The method is used to output the **argument**.  The **argument** is the string **literal** 'Primitive
@@ -114,7 +114,7 @@ variable was intended.  Let's build the same example using OOP.
 
     ![t3-address-class.png](../images/t3-address-class.png) 
 
-    Lets break down the code:
+    Let's break down the code:
 
     1. The line `class Address:` declares the **Address** class.  Any code indented will belong to this class.
     1. The line `def __init__(self, p_street, p_city, p_state, p_zip)` is a special method called a **constructor**
