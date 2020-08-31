@@ -134,7 +134,7 @@ variable was intended.  Let's build the same example using OOP.
         - The zip '55555' represents the value for the **p_zip** parameter.
 
         The **self** parameter in the **\_\_init\_\_** method is always the first parameter of every method
-        belonging to an instance (object) of the address class.  The **self** parameter is used to create
+        belonging to an object (instance) of the address class.  The **self** parameter is used to create
         object (instance) variables and call other object (instance) methods of the address class.
 
 
