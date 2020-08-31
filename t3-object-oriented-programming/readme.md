@@ -163,6 +163,11 @@ variable was intended.  Let's build the same example using OOP.
        print out the default implementation of this method.  The default implementation is not
        formatted well and prints details that would confuse a lot of people.  Our implementation prints
        out the object in the same format that the primitive variables used in the last section.
+
+         Also, notice how the line has the same number of indentions as the method constructor.
+         This indicates that the method belongs to the class just like the constructor. Or another way
+         you could tell the method belonged to the class is that the method was intented one more tab
+         compared to the **Address:** line.  The **Address:** line is called the **class declaration**. 
         
 
 
