@@ -50,7 +50,7 @@ create a new Python file as is shown below.
       sum_of_class_sizes = 0
       while current_index < length:
         sum_of_class_sizes += class_sizes[current_index]
-	current_index += 1
+        current_index += 1
       
       average_class_size = round(sum_of_class_sizes/length)
 
