@@ -182,7 +182,7 @@ variable was intended.  Let's build the same example using OOP.
 
        print ('OOP to Represent Your Application ---->\n')
 
-       print('Your OOP work address is the following:')
+       print('Your OOP home address is the following:')
        print('')
        home_address = Address('50 Carter Way', 'Springfield', 'VA', '22150')
        print(home_address)
@@ -194,10 +194,56 @@ variable was intended.  Let's build the same example using OOP.
        print(work_address)
     ```
 
+    Let's break down the code:
 
-:construction:
+    1. The line `from address import Address` says to import the **Address** class from the **address.py** file so
+       that the current code can reference the **Address** class.
 
-To continue to learn more about Python, please proceed back to the main instructions.
+    1. The line `print ('OOP to Represent Your Application ---->\n')` simply marks the start of OOP code
+       to print out the addresses.  The **\n** character is used to print a new line after the text.
+
+    1. The line `print('Your OOP home address is the following:')` simply marks the start of the home address
+       object creation code and printing out the object.
+
+    1. The line `print('')` simply adds an empty line to the output.
+
+    1. The line `home_address = Address('50 Carter Way', 'Springfield', 'VA', '22150')` creates the home
+       address variable. When creating the home address, remember the constructor of the **Address** is being
+       called.
+
+    1. The line `print(home_address)` calls the **print** method.  Then, the **print** method internally calls
+       the Address object method **\_\_str\_\_** to get the object into a **string** variable.  Finally, the
+       **print** method prints the output to the screen using the **string** variable.
+
+    1. The line `print('')` simply adds an empty line to the output.
+
+    1. The line `print('Your OOP work address is the following:')` simply marks the start of the work address
+       object creation code and printing out the object.
+
+    1. The line `print('')` simply adds an empty line to the output.
+
+    1. The line `work_address = Address('125 Independence Lane', 'Tysons Corner', 'VA', '22102')` creates the work
+       address variable. When creating the work address, remember the constructor of the **Address** is being
+       called.
+
+    1. The line `print(work_address)` calls the **print** method.  Then, the **print** method internally calls
+       the Address object method **\_\_str\_\_** to get the object into a **string** variable.  Finally, the
+       **print** method prints the output to the screen using the **string** variable.
+
+1. Run the **a-little-object-oriented-programming.py** file.  You should get the following output.
+
+![t3-output](../images/p3-output.png)
+
+
+The output prints out the addresses using the primitives and using the Address class.  Notice, how using
+Object Oriented Programming (OOP) makes your code more maintainable.  The code contains less variables
+to reduce possible errors in future code, the code is smaller indicating the intent of the variables more clearly,
+and by using OOP, programmers can think of your code in terms of a real world object, an address.  Programmers
+no longer have to look at the primitives and think of individual variables and other code to come up with the
+idea of addresses and which variable belongs to which address.
+
+
+We have finished our first tutorial on OOP.  To continue to learn more about Python, please proceed back to the main instructions.
 
 
 [**<--Back to main instructions**](../readme.md)
