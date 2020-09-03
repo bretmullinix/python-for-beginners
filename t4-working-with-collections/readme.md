@@ -63,6 +63,29 @@ create a new Python file as is shown below.
     and prints the average.  Note:  The loop code is not maintainable.  A better looping mechanism will be
     used after the concepts of indexes, a list, and looping through the list are explained. 
 
+    Let's explain the code:
+
+    1. The line `class_sizes = [22,24,42,15,7,17]` creates a list of class sizes and assigns them to the
+       variable **class_sizes**.  After the assignment, the **class_sizes** variable gets the data type of
+       **list**.  This list contains **6** class sizes.  We need to explain some attributes of a list:
+
+        1. length --> The number of items in a list. In the case above, each item is a class size so
+           the length of the list is **6**.
+
+        1. index --> Each list item can be referenced by an index.  In the case above, the item '22' has
+           a list index of **0** while the last item in the list, **17**, has an index of **5**.
+
+    1. The line `current_index = 0` assigns the variable **current_index** to an integer value of **0**.
+       The variable will be used to get all of the items from the **class_sizes** list.  The first item
+       in the **class_sizes** list has an index of **0**. This is why the **current_index** variable is initialized
+       to **0**.
+
+    1. The line `length = len(class_sizes)` creates the variable **length** and then assigns the result of calling
+       the Python method **len** after passing in the **class_sizes** list.  The Python method **len** obtains the
+       total length of a list.  So for this line of code, the **length** gets assigned the length of the **class_sizes**
+       list.  The result should be the value **6**.
+
+
 
 Under construction, please continue to follow along as the tutorial is built over the next couple of days....
 
