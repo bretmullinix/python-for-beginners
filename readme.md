@@ -1,6 +1,6 @@
 # Working with Python
 
-Last updated: 08.31.2020
+Last updated: 09.03.2020
 
 ## Purpose
 
@@ -49,5 +49,13 @@ The tutorials in this repo are as follows:
    Shows the user how to work with Object Oriented Programming (OOP).  Object oriented programming uses
    real world objects (such as people, places, or things) to model your application(s).  The tutorial
    is located in the [**t3-object-oriented-programming**](./t3-object-oriented-programming) folder.
+
+1. **Working with collections**
+
+   Shows the user how to work with collections.  A collection is used to hold a group of data types (like
+   **string**, **int**, **long**, or **objects in a class** to name a few) so developers can perform
+   actions using the collection.  For certain scenarios, working with collections gives developers
+   several advantages compared to working with the individual data types.
+   The tutorial is located in the [**t4-working-with-collections**](./t4-working-with-collections) folder.
 
 :construction:
