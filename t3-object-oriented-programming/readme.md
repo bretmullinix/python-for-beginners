@@ -171,7 +171,7 @@ variable was intended.  Let's build the same example using OOP.
          This indicates that the method belongs to the class just like the constructor. 
          
          In addition to looking at the methods being lined up to determine ownership,
-         you could tell the method belonged to the class because the method was indented one more tab
+         you can tell the method belongs to the class because the method is indented one more tab
          compared to the **Address:** line.  The **Address:** line is called the **class declaration**. 
         
 
