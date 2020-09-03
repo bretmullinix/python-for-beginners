@@ -67,8 +67,9 @@ create a new Python file as is shown below.
 
     1. The line `class_sizes = [22,24,42,15,7,17]` creates a list of class sizes and assigns them to the
        variable **class_sizes**.  After the assignment, the **class_sizes** variable gets the data type of
-       **list**.  This list contains **6** class sizes.  Before we go further, we need to explain some attributes
-       of a list:
+       **list**.  This list contains **6** class sizes.  
+
+    1. Before we go further, we need to explain some attributes of a list:
 
         1. **length** --> The number of items in a list. In the case above, each item is a class size so
            the length of the list is **6**.
