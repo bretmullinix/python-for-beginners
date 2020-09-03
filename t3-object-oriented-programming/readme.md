@@ -174,6 +174,25 @@ variable was intended.  Let's build the same example using OOP.
          you can tell the method belongs to the class because the method is indented one more tab
          compared to the **Address:** line.  The **Address:** line is called the **class declaration**. 
         
+1. Add the following code to the end of the **a-little-object-oriented-programming.py** file.
+
+    ```python
+       print('--------------------------------------------------------------------------------------------------')
+       from address import Address
+
+       print ('OOP to Represent Your Application ---->\n')
+
+       print('Your OOP work address is the following:')
+       print('')
+       home_address = Address('50 Carter Way', 'Springfield', 'VA', '22150')
+       print(home_address)
+
+       print('')
+       print('Your OOP work address is the following:')
+       print('')
+       work_address = Address('125 Independence Lane', 'Tysons Corner', 'VA', '22102')
+       print(work_address)
+    ```
 
 
 :construction:
