@@ -135,10 +135,10 @@ variable was intended.  Let's build the same example using OOP.
 
         The **self** parameter in the **\_\_init\_\_** method is always the first parameter of every method
         belonging to an object (instance) of the address class.  The **self** parameter is used to create
-        object (instance) variables and call other object (instance) methods of the address object. An address object
-        is like the object **johns_address** above or creating an object called **work_address** to represent
+        object (instance) variables and call other object (instance) methods of an address object. An address object
+        is like the object **johns_address** above or an object called **work_address** to represent
         a work address.  The objects are instances of the address class.  Each object has different
-        values for variables for the address class.
+        values for variables for the address class and occupy different areas in memory.
 
         The code line is also known as the **method signature**.  The **method signature** defines what the
         name of the method is and the parameters.  Optionally, the data types of the parameters
