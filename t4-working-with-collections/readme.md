@@ -144,11 +144,11 @@ create a new Python file as is shown below.
 
 1. Run the python file as is shown below:
 
-    ![run_working_with_collections](../images/t3_run_working_with_collections.png)
+    ![run_working_with_collections](../images/t4-run-working-with-collections.png)
 
 1. You should see the following results.
 
-    ![results_of_running_working_with_collections](../images/t3_results_of_running_working_with_collections.png)
+    ![results_of_running_working_with_collections](../images/t4_results_of_running_working_with_collections.png)
 
 
 
