@@ -150,14 +150,50 @@ create a new Python file as is shown below.
 
     ![results_of_running_working_with_collections](../images/t4_results_of_running_working_with_collections.png)
 
+1. Add the following code to the end of the **working-with-collections.py** file.
 
+    ```python
 
+     # Calculate the average class size a little more simpler
+     print('')
+     sum_of_class_sizes = 0
+     for class_size in class_sizes:
+       sum_of_class_sizes += class_size
 
+     average_class_size = round(sum_of_class_sizes/length)
+     print('Your average class size using the new loop is', average_class_size)
 
-Under construction, please continue to follow along as the tutorial is built over the next couple of days....
+    ```
 
-:construction:
+    The code above calculates the average class size but without the **current_index** variable
+    and a smaller amount of code.  Let's explain the code below.
 
+    1. `sum_of_class_sizes = 0` --> Reinitializes the variable to the value of 0.  Otherwise,
+       we would have twice the number of students.
+
+    1. `for class_size in class_sizes:` --> Uses a new loop called the **for** loop.  The **for** loop
+       iterates over each item in the **class_sizes** list.  Each time through the loop, the next item in
+       the **class_sizes** list is assigned to the **class_size** variable.
+
+    1. `sum_of_class_sizes += class_size` --> The code is the short cut of saying 
+       `sum_of_class_sizes = sum_of_class_sizes + class_size`.  The code adds the current class size
+       to the previous **sum_of_class_sizes** value and assigns the sum to the **sum_of_class_sizes**.
+
+    1. After the loop is finished, **sum_of_class_sizes** contains the sum of class sizes.
+
+    1. `average_class_size = round(sum_of_class_sizes/length)` calculates the average as an **integer**
+       data type.
+
+    1. The line `print('Your average class size using the new loop is', average_class_size)` calls the print
+       method with the arguments **Your average class size using the new loop is** and the variable
+       **average_class_size**.  The result of the call is the output 'Your average class size using
+       the new loop is 21'.  The first argument is added (concatenated) to a space and the second argument
+       as a **string** data type.
+
+1. Run the class in IntelliJ to see the results of the second example.
+
+As you can see, the second example of calculating the average using the list was much more maintainable.
+The code was smaller, contained less variables, and read more clearly.
 
 We have finished our first tutorial on collections.  To continue to learn more about Python, please proceed back to the main instructions.
 
