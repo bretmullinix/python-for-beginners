@@ -137,6 +137,19 @@ create a new Python file as is shown below.
         1. `average_class_size = round(sum_of_class_sizes/length)` --> The average class size as an **integer**
            value.
 
+    1. The line `print('Your average class size is', average_class_size)` calls the print method with the arguments
+       **Your average class size is** and the variable **average_class_size**.  The result of the call is the output
+       'Your average class size is 21'.  The first argument is added (concatenated) to a space and the second 
+       argument as a **string** data type.
+
+1. Run the python file as is shown below:
+
+    [!run_working_with_collections](../images/t3_run_working_with_collections.png)
+
+1. You should see the following results.
+
+    [!results_of_running_working_with_collections](../images/t3_results_of_running_working_with_collections.png)
+
 
 
 
