@@ -87,6 +87,58 @@ create a new Python file as is shown below.
        total length of a list.  So for this line of code, the **length** gets assigned the length of the **class_sizes**
        list.  The result should be the value **6**.
 
+    1. The line `# Calculate the average class size` is just a comment and not executable code.  The comment
+       just indicates the code to follow is used to calculate the average class size.
+
+    1. The line `sum_of_class_sizes = 0` assigns the variable **sum_of_class_sizes** to an integer value of **0**.
+       Later, the variable is used within the loop to add all the class sizes.  The variable is declared outside the
+       loop so it can be used later outside the loop to compute the average.  If the variable was declared in the loop, 
+       the variable would not be available outside the loop.  This is what is known as variable **scope**.
+
+    1. The line `while current_index < length:` declares a loop which says to execute all the indented code
+       while the **current_index** variable is less than the **length** variable.  Remember, earlier in the
+       code we assigned the **current_index** to a value of **0**, the first index into a list, and the
+       **length** to the length of the **class_sizes** list.  As a result, the first while condition evaluates
+       to the value of **true** because **0** is less than **6** and the indented loop code is executed.
+
+    1. The line `sum_of_class_sizes += class_sizes[current_index]` is the same as the line of code
+       `sum_of_class_sizes = sum_of_class_sizes + class_sizes[current_index]`.  Let's break down this code.
+
+        1. `class_sizes[current_index]` = obtains the list item located at the value of the variable
+           **current_index**.
+
+        1. `sum_of_class_sizes + class_sizes[current_index]` = adds the value of the item in the
+            **class_sizes** list to the value of the **sum_of_class_sizes**.
+
+        As the loop code is executed each time, the **sum_of_class_sizes** adds each value pointed to
+        the **class_sizes[current_index]**.
+
+    1. The line `current_index += 1` is the same as line of code `current_index = current_index + 1`.
+       After each iteration of the loop, the variable **current_index** is assigned the previous value of
+       **current_index** plus **1**.  By looking at this statement, you can see that the **while**
+       loop will eventually be **false** because **current_index** will equal the **length** value.  The
+       **length** value represents the length of the **class_sizes** list.
+       
+       We stop at the length of the **class_sizes** because the purpose of the loop is to 
+       add all the class sizes to the **sum_of_class_sizes** variable.
+
+    1. The line `average_class_size = round(sum_of_class_sizes/length)` does the following:
+
+        1. `sum_of_class_sizes/length` = The variable **sum_of_class_sizes** has the value of the sum
+            of the class sizes.  The variable **length** has the length of the **class_sizes** array or
+            the number of class sizes.  When you divide **sum_of_class_sizes** by the **length**, you get the
+            average size of a class.  However, the value is a decimal value or **float** data type.  This is
+            where the **round** method comes in.
+
+        1. `round(sum_of_class_sizes/length)` = The average class size is calculated resulting in an average
+            class size as a decimal value.  We don't have class sizes in decimal so we use the **round**
+            method to round to the nearest **integer** to come up with our average class size.
+
+        1. `average_class_size = round(sum_of_class_sizes/length)` = The average class size as an **integer**
+           value.
+
+
+
 
 
 Under construction, please continue to follow along as the tutorial is built over the next couple of days....
