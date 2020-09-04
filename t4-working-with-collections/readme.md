@@ -104,10 +104,10 @@ create a new Python file as is shown below.
     1. The line `sum_of_class_sizes += class_sizes[current_index]` is the same as the line of code
        `sum_of_class_sizes = sum_of_class_sizes + class_sizes[current_index]`.  Let's break down this code.
 
-        1. `class_sizes[current_index]` = obtains the list item located at the value of the variable
+        1. `class_sizes[current_index]` --> obtains the list item located at the value of the variable
            **current_index**.
 
-        1. `sum_of_class_sizes + class_sizes[current_index]` = adds the value of the item in the
+        1. `sum_of_class_sizes + class_sizes[current_index]` --> adds the value of the item in the
             **class_sizes** list to the value of the **sum_of_class_sizes**.
 
         As the loop code is executed each time, the **sum_of_class_sizes** adds each value pointed to
@@ -124,17 +124,17 @@ create a new Python file as is shown below.
 
     1. The line `average_class_size = round(sum_of_class_sizes/length)` does the following:
 
-        1. `sum_of_class_sizes/length` = The variable **sum_of_class_sizes** has the value of the sum
+        1. `sum_of_class_sizes/length` --> The variable **sum_of_class_sizes** has the value of the sum
             of the class sizes.  The variable **length** has the length of the **class_sizes** array or
             the number of class sizes.  When you divide **sum_of_class_sizes** by the **length**, you get the
             average size of a class.  However, the value is a decimal value or **float** data type.  This is
             where the **round** method comes in.
 
-        1. `round(sum_of_class_sizes/length)` = The average class size is calculated resulting in an average
+        1. `round(sum_of_class_sizes/length)` --> The average class size is calculated resulting in an average
             class size as a decimal value.  We don't have class sizes in decimal so we use the **round**
             method to round to the nearest **integer** to come up with our average class size.
 
-        1. `average_class_size = round(sum_of_class_sizes/length)` = The average class size as an **integer**
+        1. `average_class_size = round(sum_of_class_sizes/length)` --> The average class size as an **integer**
            value.
 
 
