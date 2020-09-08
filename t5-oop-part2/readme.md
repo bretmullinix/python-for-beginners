@@ -63,13 +63,13 @@ create a new Python file as is shown below.
    
    1. The line `self.__number_of_legs_needed_to_walk = number_of_legs_needed_to_walk` assigns the parameter value of
       **number_of_legs_needed_to_walk** to the instance variable **\_\_number_of_legs_needed_to_walk**.  Instance
-      variables beginning with **\_\_** are considered private variables.  Users have to explicitly type the
-      **\_\_** before a variable name to access these private variables.  This discourages users from changing these
-      variables which could impact the **state** of the instance.  A **state** of an instance is the combination of
+      variables beginning with **two underscores** are considered private variables.  Users have to explicitly type the
+      **two underscores** before a variable name to access these private variables.  This discourages users from changing
+      these variables which could impact the **state** of the instance.  A **state** of an instance is the combination of
       all the values of the instance variables.  For instance, if the **state** was modified by changing the
       **__number_of_legs_needed_to_walk** outside the class, and the instance created was a dog, then the **state**
       would be put into an invalid state for a dog.  However, this is much more likely to happen if you have variables
-      not declared with the prefix **\_\_**.  Users will think it is ok to modify the variable.
+      not prefixed with **two underscores**.  Users will think it is ok to modify the variable.
       
    1. The line ``def get_number_of_legs_needed_to_walk(self):`` is a method used to get the number of legs for a mammal
       instance.  We use the method to return the value of the private instance variable 
