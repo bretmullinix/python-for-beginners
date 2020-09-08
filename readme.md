@@ -36,7 +36,7 @@ The tutorials in this repo are as follows:
 1. **Getting Started**
 
     Shows the user how to set up their environment
-    and run adhoc **python** commands.  The tutorial is located in the
+    and run adhoc **python** commands.  The tutorial is in the
     [**t1-getting-started**](./t1-getting-started) folder.
 
 1. **Working with variables and data types**
