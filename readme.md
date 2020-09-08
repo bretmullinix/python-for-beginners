@@ -1,6 +1,6 @@
 # Working with Python
 
-Last updated: 09.03.2020
+Last updated: 09.08.2020
 
 ## Purpose
 
@@ -57,5 +57,11 @@ The tutorials in this repo are as follows:
    actions using the collection.  For certain scenarios, working with collections gives developers
    several advantages compared to working with the individual data types.
    The tutorial is located in the [**t4-working-with-collections**](./t4-working-with-collections) folder.
+
+1. **Continue to work with Object Oriented Programming (OOP)**
+
+   Builds on the first OOP tutorial.  Provides critical foundational skills in OOP.  You will learn
+   about inheritance, polymorphism, encapsulation, and composition.  The example used in the tutorial
+   will focus on working with the real world **mammal**.
 
 :construction:
