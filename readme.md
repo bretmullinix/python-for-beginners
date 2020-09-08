@@ -42,13 +42,13 @@ The tutorials in this repo are as follows:
 1. **Working with variables and data types**
 
     Shows the user how to work with different variables and data types.
-    The tutorial is located in the [**t2-variables-and-data-types**](./t2-variables-and-data-types) folder.
+    The tutorial is in the [**t2-variables-and-data-types**](./t2-variables-and-data-types) folder.
 
 1. **Getting Started with Object Oriented Programming (OOP)**
 
    Shows the user how to work with Object Oriented Programming (OOP).  Object oriented programming uses
    real world objects (such as people, places, or things) to model your application(s).  The tutorial
-   is located in the [**t3-object-oriented-programming**](./t3-object-oriented-programming) folder.
+   is in the [**t3-object-oriented-programming**](./t3-object-oriented-programming) folder.
 
 1. **Working with collections**
 
@@ -56,12 +56,13 @@ The tutorials in this repo are as follows:
    **string**, **int**, **long**, or **objects in a class** to name a few) so developers can perform
    actions using the collection.  For certain scenarios, working with collections gives developers
    several advantages compared to working with the individual data types.
-   The tutorial is located in the [**t4-working-with-collections**](./t4-working-with-collections) folder.
+   The tutorial is in the [**t4-working-with-collections**](./t4-working-with-collections) folder.
 
 1. **Continue to work with Object Oriented Programming (OOP)**
 
    Builds on the first OOP tutorial.  Provides critical foundational skills in OOP.  You will learn
    about inheritance, polymorphism, encapsulation, and composition.  The example used in the tutorial
-   will focus on working with the real world **mammal**.
+   will focus on working with the real world **mammal**. The tutorial is in the 
+   [**t5-oop-part2](./t5-oop-part2) folder.
 
 :construction:
