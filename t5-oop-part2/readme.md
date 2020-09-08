@@ -72,8 +72,10 @@ create a new Python file as is shown below.
       not declared with the prefix **\_\_**.  Users will think it is ok to modify the variable.
       
    1. The line ``def get_number_of_legs_needed_to_walk(self):`` is a method used to get the number of legs for a mammal
-      instance.  We use the method to return the value of the private instance variable **\_\_number_of_legs_needed_to_walk**.
-      This provides access to the value of the variable without allowing the variable to be modified.
+      instance.  We use the method to return the value of the private instance variable 
+      **\_\_number_of_legs_needed_to_walk**.  This provides access to the value of the variable without allowing the
+      variable to be modified.  The capability to make instance (object) variables private, not easily accessible
+      outside the instance, and not easily modified outside the instance is called **encapsulation**.
 
 :construction:
   
