@@ -63,6 +63,6 @@ The tutorials in this repo are as follows:
    Builds on the first OOP tutorial.  Provides critical foundational skills in OOP.  You will learn
    about inheritance, polymorphism, encapsulation, and composition.  The example used in the tutorial
    will focus on working with the real world **mammal**. The tutorial is in the 
-   [**t5-oop-part2](./t5-oop-part2) folder.
+   [**t5-oop-part2**](./t5-oop-part2) folder.
 
 :construction:
