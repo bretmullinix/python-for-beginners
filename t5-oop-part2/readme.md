@@ -97,7 +97,7 @@ create a new Python file as is shown below.
     mammal.walk()
    ```
 
-1. You should get the following output
+1. You should get the following output:
 
     ![t5-output-mammal-walk](../images/t5-output-mammal-walk.png)
 
