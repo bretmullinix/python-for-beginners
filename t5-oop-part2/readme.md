@@ -171,7 +171,72 @@ create a new Python file as is shown below.
 
     - As a result of having a different class and different number of legs passed to the **Mammal** constructor,
       the **Human** class gets the output "The human walks on 2 legs."    
+
+1. Add the following code to the end of the **mammal.py** file.
+
+    ```python
+     def speak(self):
+       print('Mammal speaking....')
+    ```
+
+1. Delete all the contents of your **oop-part2.py** file and add the following contents:
+
+    ```python
+    # Create a mammal and call it's walk method
+    from mammal import Mammal
     
+    mammal = Mammal()
+    mammal.walk()
+    mammal.speak()
+    
+    print("")
+    # Create a human and call it's walk method
+    from human import Human
+    human = Human()
+    human.walk()
+    human.speak()
+   ``` 
+
+1. Run the **oop-part2.py** class and you should get the following output:
+
+    ![p5-output-mammal-speak](../images/p5-output-mammal-speak.png)
+
+1. Notice how the **Human** object calls the **speak** method of the parent by seeing the
+   same output "Mammal speaking...".
+   
+1. Add the following to the end of the **Human** class
+
+    ```python
+    def speak(self):
+       print('Human speaks...')
+    ```
+    
+1. Run the **oop-part2.py** class and you should get the following output:
+
+    ![p5-output-human-speak-overriding](../images/p5-output-human-speak-overriding.png)
+
+1. Notice how the **Human** object calls the **speak** method of the **Human** class instead
+   of using the **Mammal** class.  This is called method **overriding**.  This is also a form
+   of **polymorphism**.  The following code snippets would call the **speak** method of the human
+   object.
+   
+   ```python
+    # Call a method that expects a Mammal, but
+    # we pass in a human
+    def speak_and_walk(obj : Mammal):
+        print('')
+        print('Walk the mammal:')
+        obj.walk()
+        print('')
+        print('What does the mammal say:')
+        obj.speak()
+    
+    human = Human()
+    speak_and_walk(human)
+   ```
+   
+   The code is polymorphic because the human acts like a mammal in the method.
+
 :construction:
   
 Under construction, please continue to follow along as I build this tutorial.
