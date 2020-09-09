@@ -244,6 +244,8 @@ create a new Python file as is shown below.
    is called instead of the Mammal method.  If we deleted the **speak** method from the Human class, the
    Mammal method would be called again.
 
+### Composition
+
 :construction:
   
 Under construction, please continue to follow along as I build this tutorial.
