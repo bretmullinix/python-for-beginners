@@ -217,7 +217,7 @@ create a new Python file as is shown below.
 
 1. Notice how the **Human** object calls the **speak** method of the **Human** class instead
    of using the **Mammal** class.  This is called method **overriding**.  This is also a form
-   of **polymorphism**.  The following code snippets would call the **speak** method of the human
+   of **polymorphism**.  The following code snippet would call the **speak** method of the human
    object.
    
    ```python
