@@ -67,7 +67,7 @@ create a new Python file as is shown below.
       **two underscores** before a variable name to access these private variables.  This discourages users from changing
       these variables which could impact the **state** of the instance.  A **state** of an instance is the combination of
       all the values of the instance variables.  For instance, if the **state** was modified by changing the
-      **__number_of_legs_needed_to_walk** outside the class, and the instance created was a dog, then the **state**
+      **__number_of_legs_needed_to_walk** outside the class to 2, and the instance created was a dog, then the **state**
       would be put into an invalid state for a dog.  However, this is much more likely to happen if you have variables
       not prefixed with **two underscores**.  Users will think it is ok to modify the variable.
       
