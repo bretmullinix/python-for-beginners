@@ -99,7 +99,9 @@ create a new Python file as is shown below.
 
 1. You should get the following output
 
-![t5-output-mammal-walk](../images/t5-output-mammal-walk.png)
+    ![t5-output-mammal-walk](../images/t5-output-mammal-walk.png)
+
+
 :construction:
   
 Under construction, please continue to follow along as I build this tutorial.
