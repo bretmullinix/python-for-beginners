@@ -76,7 +76,30 @@ create a new Python file as is shown below.
       **\_\_number_of_legs_needed_to_walk**.  This provides access to the value of the variable without allowing the
       variable to be modified.  The capability to make instance (object) variables private, not easily accessible
       outside the instance, and not easily modified outside the instance is called **encapsulation**.
+    
+   1. The line `def walk(self):` creates the object method **walk**.
+   
+   1. The line `class_name = self.__class__.__name__.lower()` obtains the class name in
+      lower case using built in Python metadata on the class.
+   
+   1. The line `number_of_legs_needed_to_walk = self.get_number_of_legs_needed_to_walk()` assigns the
+      result of calling the object method **self.get_number_of_legs_needed_to_walk()**.
+      
+   1. The line `print ('The ' + class_name + ' walks on ' + str(number_of_legs_needed_to_walk) + ' legs.')` prints
+      out the resulting concatenated string "The mammal walks on 4 legs".
+      
+1. Add the following content to the **oop-part2.py** file and run the Python file.
+   
+   ```python
+    # Create a mammal and call it's walk method
+    from mammal import Mammal      
+    mammal = Mammal()
+    mammal.walk()
+   ```
 
+1. You should get the following output
+
+![t5-output-mammal-walk](../images/t5-output-mammal-walk.png)
 :construction:
   
 Under construction, please continue to follow along as I build this tutorial.
