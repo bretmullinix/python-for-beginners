@@ -1,6 +1,6 @@
 # Working with Python:  Object Oriented Programming (OOP) Part 2
 
-Last updated: 09.08.2020
+Last updated: 09.09.2020
 
 ## Purpose
 
