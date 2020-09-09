@@ -37,7 +37,8 @@ create a new Python file as is shown below.
     ![t3-a-little-oop-file-created](../images/t5-create-python-file-oop-part2.png)
 
 
-### Creating the Mammal class
+### Encapsulation
+
 1. Create the class called **Mammal.py** in IntelliJ.
 1. Add the following code to the **Mammal.py** class.
 
@@ -100,6 +101,8 @@ create a new Python file as is shown below.
 1. You should get the following output:
 
     ![t5-output-mammal-walk](../images/t5-output-mammal-walk.png)
+
+### Inheritance
 
 1. Create the class called **human.py**.
 
@@ -171,6 +174,8 @@ create a new Python file as is shown below.
 
     - As a result of having a different class and different number of legs passed to the **Mammal** constructor,
       the **Human** class gets the output "The human walks on 2 legs."    
+
+### Polymorphism
 
 1. Add the following code to the end of the **mammal.py** file.
 
