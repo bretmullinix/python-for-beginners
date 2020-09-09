@@ -217,8 +217,7 @@ create a new Python file as is shown below.
 
 1. Notice how the **Human** object calls the **speak** method of the **Human** class instead
    of using the **Mammal** class.  This is called method **overriding**.  This is also a form
-   of **polymorphism**.  The following code snippet would call the **speak** method of the human
-   object.
+   of **polymorphism**.  Take a look at the following code snippet:
    
    ```python
     # Call a method that expects a Mammal, but
@@ -235,7 +234,10 @@ create a new Python file as is shown below.
     speak_and_walk(human)
    ```
    
-   The code is polymorphic because the human acts like a mammal in the method.
+   The code snippet above calls the method with a human value for the required Mammal parameter.  Because a
+   human is a Mammal, the call is allowed.  Then, when the method executes, the **speak** method of the Human
+   is called instead of the Mammal method.  If we deleted the **speak** method from the Human class, the
+   Mammal method would be called again.
 
 :construction:
   
