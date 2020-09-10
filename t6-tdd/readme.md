@@ -128,9 +128,11 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
    get the context menu, and clicking the "Run" menu item.  Below is an
    image of the menu item being selected.
       
-   ![t6-tdd-run-test-context-menu](../images/t6-tdd-run-test-context-menu.png)
+    ![t6-tdd-run-test-context-menu](../images/t6-tdd-run-test-context-menu.png)
       
 1. Run your test.  The output indicates the **Database** class has not been created.
+
+    ![t6-tdd-run-red-test](../images/t6-tdd-run-red-test.png)
 
 1. The next step is to get us back to **Green** in the **RGR** process of TDD.  The
    **Green** is getting a passing test as quickly as possible that satisfies
