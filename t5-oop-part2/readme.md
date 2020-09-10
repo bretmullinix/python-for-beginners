@@ -246,12 +246,101 @@ create a new Python file as is shown below.
 
 ### Composition
 
-:construction:
+Composition is the process of using other classes to form the idea of one class.  We are going to create
+a Car class which is composed of other classes.
+
+1. Add the **engine.py** file.
+
+1. In the **engine.py** file add the following contents.
+
+    ```python
+   class Engine:
+       def __init__(self):
+           pass
+   
+       def start (self):
+           print('\tEngine started')
+   
+       def stop (self):
+           print('\tEngine stopped')
+    ```
+1. Add the **battery.py** file.
+
+1. In the **battery.py** file add the following contents.
+
+    ```python
+   from engine import Engine
+      
+   class Battery:
+       def __init__(self):
+           pass
+   
+       def start (self, engine: Engine):
+           print('\tBattery sending engine electric signal to start')
+           engine.start()
+    ```
+ 
+1. Add the **car.py** file.
+
+1. In the **car.py** file add the following contents.
+
+    ```python
+   from battery import Battery
+   from engine import Engine
+   
+   class Car:
+       def __init__(self, battery: Battery, engine: Engine):
+           self.battery = battery
+           self.engine = engine
+   
+       def start (self):
+           print('Car is trying to start: ')
+           self.battery.start(self.engine)
+   
+       def stop(self):
+           print('Car is trying to stop: ')
+           self.engine.stop()
   
-Under construction, please continue to follow along as I build this tutorial.
+    ```
+
+1. Most of the code for the car, engine, and battery should be understood
+   based on previous tutorials.  The only addition to the classes was the
+   word **pass** in the constructor.  The purpose of the **pass** keyword
+   is to show users that no further code is needed to construct the class.
+   
+   We could have left the constructor out and Python would have provided us
+   with a default constructor.  However, I believe it is good practice to 
+   explicitly inform your developers what your code does.  This helps
+   the developers maintain the code because the developers know the 
+   writers intent was to use a default constructor.
+   
+1. Add the following code to the end of the **oop-part2.py** class and run the 
+   class.
+   
+1. You should get the following output.
+
+    ![t5-output-all-of-oop-part2](../images/t5-output-all-of-oop-part2.png)
+
+    The output shows the result of starting and stopping a car.  First, the car
+    tells the battery to start.  Next, the battery tells the engine to start.
+    Finally, the engine starts.
+    
+    To stop the car, the car tells the engine to stop.  Then, the engine stops.
+    
+    Obviously, this is not all the parts of a car, and coming from a
+    writer that does not know much about cars, does not represent the basics 
+    of a car very well.  However, the purpose of the example was to show you
+    how powerful **composition** can be for OOP.
+    
+We have explained how important **Inheritance**, **Encapsulation**, 
+**Polymorphism**, and **Composition** are to programming in **OOP**.
+It is up to you to decide whether you use **OOP** and these 
+principles in your programming tasks, but there will be times
+**OOP** might simplify your modeling.
 
 
-We have finished our second tutorial on OOP.  To continue to learn more about Python, please proceed back to the main instructions.
+We have finished our second tutorial on OOP.  To continue to learn more about Python, 
+please proceed back to the main instructions.
 
 
 [**<--Back to main instructions**](../readme.md)
