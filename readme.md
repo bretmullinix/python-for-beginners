@@ -65,4 +65,13 @@ The tutorials in this repo are as follows:
    will focus on working with the real world **mammal** and **car** objects to explain the OOP concepts.
    The tutorial is in the [**t5-oop-part2**](./t5-oop-part2) folder.
 
+1. **Working with Test Driven Design (TDD)**
+
+   Test Driven Design (TDD) is a great practice that can take you from a beginner in
+   software development to an experienced or even advanced software developer in
+   a very short period.  TDD is based on the idea where you create your application
+   or feature using pseudo code in a test, have the test fail, make changes to quickly
+   get your application test to work, and then change your code to make your code
+   maintainable and extensible.  The tutorial is in the [**t6-tdd**](./t6-tdd) folder.
+
 :construction:
