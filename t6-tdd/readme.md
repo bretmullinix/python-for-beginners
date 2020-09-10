@@ -44,7 +44,7 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
         import unittest      
         class TestListAllEmployees(unittest.TestCase):
         
-            def test_list_all_employees:
+            def test_list_all_employees(self):
                 database = Database("postgres")
                 employees = database.get_all_employees()
                 print("Your list of employees --->")
@@ -60,6 +60,55 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
         1. The line of code `import unittest` imports the **unittest** library.
            This library is used to create the tests and use their
            testing framework.
+         
+        1. The line of code `class TestListAllEmployees(unittest.TestCase):`
+           creates the **TestListAllEmployees** class and this class inherits
+           from **unittest.TestCase**.  The **unittest.TestCase** contains
+           all the necessary testing infrastructure and methods for performing
+           the tests.
+           
+        1. The line of code `def test_list_all_employees(self):` is indented
+           from the class declaration indicating it is a method of the class.
+           By passing **self** as a parameter, the method becomes an object method.
+           The **self** parameter is the actual object.  You can access
+           all the object methods and state (variables) through the
+           **self** parameter.
+           
+           The **test\_** method prefix tells the **unittest** library to treat
+           the method as a **test** method.  Any other method without the prefix,
+           will not be run as a test.
+           
+        1. The line of code `database = Database("postgres")` is the first line
+           of code for the **test_list_all_employees(self)** method.  The
+           line is pseudo code for a database object.  Passing in the parameter
+           **"postgres"** indicates the type of database.  We have not created
+           the **Database** class. The idea of writing the pseudo code is to 
+           capture **what** we want to do, according to the **requirement**, 
+           not **how** we are going to do it.  That comes later.
+           
+        1. The line of code `employees = database.get_all_employees()` calls
+           the **get_all_employees** method of the database object created 
+           in the previous line.  Because the **Database** class doesn't
+           exist, the method **get_all_employees** is pseudo code as well.
+           The idea of writing the pseudo code is to capture **what**
+           we want to do, according to the **requirement**, not **how** we
+           are going to do it.  That comes later.
+           
+        1. The line of code `print("Your list of employees --->")` just
+           prints out the statement "Your list of employees --->".  The
+           output is just to indicate the start of listing the employees.
+           
+        1. The line of code `for employee in employees:` loops through
+           each employee in the list returned from the database.
+           
+        1. The line of code `print(employee)` prints out the current
+           employee in the **for** loop.
+           
+   1. The code is all pseudo code.  The code captures **what** we
+      are suppose to do via the **requirement**.  If we run the test,
+      the test will fail.  This represents the **Red** in the 
+      **Red**, **Green**, **Refactor** **(RGR)** process of TDD.
+      
         
 
 :construction:
