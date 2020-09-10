@@ -22,6 +22,46 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
     folder should be visible. If the **first_application** folder is not open, go to the **File** menu,
     click on the **Open..** menu item, and navigate to the **first_application** folder.
 
+1. The requirement for this example is **"List all the employees in our application."**.
+   The requirement states we have an application.  In this case, we don't have one,
+   but we will create our feature as if we did.
+
+1. Let's setup Python testing
+
+    1. Create the **tests** folder using the context menu as is shown below
+    
+        ![t6-tdd-new-directory-context-menu](../images/t6-tdd-new-directory-context-menu.png)
+    
+    1. Under the **tests** folder, let's create a python test file called
+       **list_all_employees.py**.  After you create the file, you should
+       see the following content.
+       
+        ![t6-tdd-list-all-employees](../images/t6-tdd-list-all-employees-empty-file.png)       
+
+    1. Add the following code to the **list_all_employees.py** file.
+    
+        ```python  
+        import unittest      
+        class TestListAllEmployees(unittest.TestCase):
+        
+            def test_list_all_employees:
+                database = Database("postgres")
+                employees = database.get_all_employees()
+                print("Your list of employees --->")
+                for employee in employees:
+                    print(employee)
+        
+        if __name__ == '__main__':
+            unittest.main()
+        ```   
+     
+        Let's explain the code:
+        
+        1. The line of code `import unittest` imports the **unittest** library.
+           This library is used to create the tests and use their
+           testing framework.
+        
+
 :construction:
 
 The tutorial is currently under construction.  Please follow along as the tutorial
