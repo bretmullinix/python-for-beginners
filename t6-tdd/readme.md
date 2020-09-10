@@ -104,10 +104,39 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
         1. The line of code `print(employee)` prints out the current
            employee in the **for** loop.
            
-   1. The code is all pseudo code.  The code captures **what** we
-      are suppose to do via the **requirement**.  If we run the test,
-      the test will fail.  This represents the **Red** in the 
-      **Red**, **Green**, **Refactor** **(RGR)** process of TDD.
+        1. The line of code `if __name__ == '__main__':` is not indented
+           under the **def test_list_all_employees(self)** or the
+           class declaration.  The line is not part of the class.
+           The line of code is only executed when the file is run
+           from the command line.  The special variable **\_\_name\_\_**
+           is populated with the string **\_\_main\_\_** when
+           Python executes the file.  As a result, when the file
+           is executed at the command line, the if condition evaluates
+           to true.
+           
+        1. The line of code `unittest.main()` is the method that
+           gets called when the Python file runs from the command line.
+           The method injects all the necessary code needed to run
+           your methods prefixed by **test\_** and runs the tests.
+          
+1. The code is all pseudo code.  The code captures **what** we
+   are suppose to do via the **requirement**.  If we run the test,
+   the test will fail.  This represents the **Red** in the 
+   **Red**, **Green**, **Refactor** **(RGR)** process of TDD.
+      
+1. Run a test by placing your cursor in the method code, right clicking to
+   get the context menu, and clicking the "Run" menu item.  Below is an
+   image of the menu item being selected.
+      
+   ![t6-tdd-run-test-context-menu](../images/t6-tdd-run-test-context-menu.png)
+      
+1. Run your test.  The output indicates the **Database** class has not been created.
+
+1. The next step is to get us back to **Green** in the **RGR** process of TDD.  The
+   **Green** is getting a passing test as quickly as possible that satisfies
+   the purpose of the test.  In our case, the purpose of the test also
+   satisfies the **requirement** for our example.
+   
       
         
 
