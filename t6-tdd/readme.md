@@ -186,7 +186,7 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
        was being used.
        
        As I look at our code, the code looks pretty good to me.  I don't see a need to do any refactoring at
-       this point.  We have completed our **requirement** and our first rouund of **RGR** and **TDD**.
+       this point.  We have completed our **requirement**, and our first round of **RGR** and **TDD**.
 
 ### What if a test takes too long to complete?
 
