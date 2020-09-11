@@ -16,6 +16,8 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
 
 ## Procedures
 
+### Creating Your First Feature with Test Driven Design (TDD)
+
 1. Open up your IntelliJ application. 
 
     ![t6-test driven development](../images/t6-open-intellij.png)
@@ -186,9 +188,21 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
        As I look at our code, the code looks pretty good to me.  I don't see a need to do any refactoring at
        this point.  We have completed our **requirement** and our first rouund of **RGR** and **TDD**.
 
-    
+### What if a test takes too long to complete?
+
+Typically, tests run by developers should take less than 30 seconds to complete.  If the tests take longer
+than 30 seconds, developers will start to hate running the tests while creating new features.  The developers
+might stick with TDD despite the time loss, but the developers might abandon the process as well.
+
+Studies have proven that much of software costs are because errors aren't caught early enough.  If the developer 
+stops running the tests, the regression tests won't be run when new code is added, and any new errors won't get caught 
+until much later.  As a result, the cost of fixing the errors will be significantly higher than if they
+were initially caught when the error was introduced.  
       
-        
+We are going to simulate a long test.  We will create a delay in the **Database.get_all_employees()** method
+of 1 minute.  The delay will simulate a database response that takes longer than the developers want to wait.
+Then, we will show you how to fix the **test_list_all_employees** test, so the developers don't have to wait
+as long. 
 
 :construction:
 
