@@ -190,8 +190,8 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
 
 ### What if a test takes too long to complete?
 
-Typically, tests run by developers should take less than 30 seconds to complete.  If the tests take longer
-than 30 seconds, developers will start to hate running the tests while creating new features.  The developers
+Typically, a test run by developers should take less than 30 seconds to complete.  If a test takes longer
+than 30 seconds, developers will start to hate running the test while creating new features.  The developers
 might stick with TDD despite the time loss, but the developers might abandon the process as well.
 
 Studies have proven that much of software costs are because errors aren't caught early enough.  If the developer 
