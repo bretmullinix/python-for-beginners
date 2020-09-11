@@ -139,6 +139,52 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
    the purpose of the test.  In our case, the purpose of the test also
    satisfies the **requirement** for our example.
    
+    1. Your code should show a red underline under the **Database** line.  Hover over the
+       red line, you will see possible fixes.  Below is a snapshot of what you will see.
+       
+        ![t6-tdd-no-database-class](../images/t6-tdd-no-database-class.png)
+        
+    1. Right click **first_application** and create the **database.py** file.
+    
+    1. In the **database.py** file, add the following contents:
+    
+        ```python
+        class Database:
+           def __init__(self, p_database_type):
+               self.database_type = p_database_type
+    
+           def get_all_employees(self):
+               return ["employee1", "employee2"]
+        ```
+    
+    1. Go back to the **list_all_employees.py** test file.
+    
+    1. Hover over the **Database** line.  You should see the following:
+    
+        ![p6-tdd-database-error-after-creating-database-class](../images/p6-tdd-database-error-after-creating-database-class.png)
+    
+    1. Once you are hovered over **Database**, click on link **import database.Database**.  This will add
+       the following code to the top of your file:  `from database import Database`
+    
+    1. Hover over the test method, right click, and run your test.  Your test should now be in **Green**.  You
+       have fulfilled your initial requirement.  You results should look like the image below.
+       
+       ![p6-tdd-list-all-employees-run-successfully](../images/p6-tdd-list-all-employees-run-successfully.png)
+       
+    1. After the **Green** step in the **Red, Green, Refactor** process of Test Driven Design (TDD), you should
+       be in the **Refactor** step.  **Refactoring** is the process of recognizing a needed change to the
+       code in a test, or the code that is referenced by the test.  Recognizing the need for a change depends
+       on the developer.  The developer might see a need for a change based on the data types used or for
+       some other reason.  For me, I always like to see maintainable code first.  Also, in my later years,
+       I've tried to adhere to **YAGNE** which stands for "You ain't gonna need it.".  So many times
+       I've coded for what I thought were going to be future requirements, only to find out the code
+       was never used.  Also, by having the extra code, the code distracted other developers from the code that
+       was being used.
+       
+       As I look at our code, the code looks pretty good to me.  I don't see a need to do any refactoring at
+       this point.  We have completed our **requirement** and our first rouund of **RGR** and **TDD**.
+
+    
       
         
 
