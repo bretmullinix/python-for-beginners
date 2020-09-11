@@ -5,7 +5,9 @@ Last updated: 09.10.2020
 ## Purpose
 
 The purpose of this tutorial is to introduce Test Driven Development (TDD).  You will
-be shown how to create an example application using TDD.
+be shown how to create features using TDD.  
+
+A feature is a **requirement** or a subset of a **requirement** for an application.
 
 ## Prerequisites
 
