@@ -214,11 +214,13 @@ as long.
        return ["employee1", "employee2"]
     ```
 
+   By adding the line `time.sleep(60)`, the code will pause for 60 seconds, or 1 minute before continuing to execute.
+
 1. Open the **list_all_employees.py** test file.
 
 1. Click in the **test_list_all_employees** method
 
-1. Right click and run the test.  The test should take 60 seconds to complete.
+1. Right click and run the test.  The test should take more than 60 seconds to complete.
 
     ![p6-tdd-list-all-employees-slow-running](../images/p6-tdd-list-all-employees-slow-running.png)
     
