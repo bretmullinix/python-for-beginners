@@ -156,7 +156,7 @@ need to perform this tutorial.  If you already have a foundation in using **OOP*
         class Database:
            def __init__(self, p_database_type):
                self.database_type = p_database_type
-    
+       
            def get_all_employees(self):
                return ["employee1", "employee2"]
         ```
@@ -204,16 +204,79 @@ of 1 minute.  The delay will simulate a database response that takes longer than
 Then, we will show you how to fix the **test_list_all_employees** test, so the developers don't have to wait
 as long. 
 
-:construction:
+1. Open the **database.py** file.  At the top of the file add the following:  `import time`.
 
-The tutorial is currently under construction.  Please follow along as the tutorial
-gets built over the next couple of weeks.
+1. Replace the **get_all_employees** method with the following:
 
+    ```python
+    def get_all_employees(self):
+       time.sleep( 60 )
+       return ["employee1", "employee2"]
+    ```
 
+1. Open the **list_all_employees.py** test file.
 
+1. Click in the **test_list_all_employees** method
 
-We have finished our tutorial on TDD.  To continue to learn more about Python, 
-please proceed back to the main instructions.
+1. Right click and run the test.  The test should take 60 seconds to complete.
 
+    ![p6-tdd-list-all-employees-slow-running](../images/p6-tdd-list-all-employees-slow-running.png)
+    
+1. Add the following code to the top of the **list_all_employees.py** test file: `from unittest import mock`
+
+    The line of code imports the **mock** class of the **unittest** framework.  A **Mock** simulates the
+    behavior of the real world object.  In our case, the **Mock** will simulate a call to the 
+    **get_all_employees** and will return data that closely resembles a database call but without
+    the minute delay of a database call.
+
+1. Add the following method to the end of the **list_all_employees** test class.
+
+    ```python
+       @patch('database.Database.get_all_employees')
+       def test_list_all_employees_fast(self, mock_method_get_all_employees ):
+           mock_method_get_all_employees.return_value =  ['employee4', 'employee5']
+           database = Database("postgres")
+           employees = database.get_all_employees()
+           print("Your list of employees --->")
+           for employee in employees:
+               print(employee)
+    ```
+   
+   The code above works like the slow method above.  However, the code injects its own version of the
+   **Database.get_all_employees** method and returns the value `['employee4','employee5']`.  The code 
+   is quicker than the 30 seconds developers want to wait for a test to complete and returns similar
+   values.
+   
+   Let's explain the code:
+   
+   1. The line `@patch('database.Database.get_all_employees)` tells the unittest framework to pass in
+      a method definition for **get_all_employees** as the parameter **mock_method_get_all_employees**.
+   
+   1. The line `def test_list_all_employees_fast(self, mock_method_get_all_employees ):` declares the
+      a method signature similar to the **test_list_all_employees_fast** but adds the mock method parameter
+      **mock_method_get_all_employees**.
+   
+   1. The line `mock_method_get_all_employees.return_value =  ['employee4', 'employee5']` sets the return
+      value for the **mock** method.
+      
+   1. The rest of the code is the same as the **test_list_all_employees** method but with one exception.
+      When the code is run, and the **database.get_all_employees** method is called, the 
+      **mock_method_get_all_employees** is called instead and returns the mock return value 
+      `['employee4', 'employee5']`.
+
+1. Run the **test_list_all_employees_fast** method and you will see similar results as below.
+
+    ![p6-tdd-list-all-employees-fast-running](../images/p6-tdd-list-all-employees-fast-running.png)
+    
+1. Notice in the output, you get the mock results.  Try running the **test_list_all_employees**
+   and after a minute, you will get the original results `["employee1", "employee2"]`.
+   
+There are many other options that have not been discussed in the **unittest** framework. 
+Please consult the documentation for further capabilities.
+
+We have finished our tutorial on TDD.  I hope you see the benefits of Test Driven Design (TDD),
+and you use it regularly.
+
+To continue to learn more about Python, please proceed back to the main instructions.
 
 [**<--Back to main instructions**](../readme.md)
