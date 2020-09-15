@@ -1,6 +1,6 @@
 # Working with Python
 
-Last updated: 09.10.2020
+Last updated: 09.15.2020
 
 ## Purpose
 
@@ -73,5 +73,16 @@ The tutorials in this repo are as follows:
    or feature using pseudo code in a test, have the test fail, make changes to quickly
    get your application test to work, and then change your code to make your code
    maintainable and extensible.  The tutorial is in the [**t6-tdd**](./t6-tdd) folder.
+
+1. **Incorporating Error/Exception Handling in your Code**
+
+   Certain resources stay in memory longer than needed if they are not closed or disposed after they are used.
+   If the resources stay around in memory and are not being used, your application can crawl to a halt or in
+   some cases crash the computer.  An example we will use in this tutorial is working with **MongoDB**, a NoSQL
+   Document database, hosted in a **Docker** container.  We will use exception handling to ensure no errors
+   occur when connecting to the database, and we will show how to close your database connection to prevent
+   memory leaks.
+   The tutorial is locate in the 
+   [**t7-exception-handling**](./t7-exception-handling) folder.
 
 :construction:
