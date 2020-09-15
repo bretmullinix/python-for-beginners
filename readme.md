@@ -82,7 +82,6 @@ The tutorials in this repo are as follows:
    Document database, hosted in a **Docker** container.  We will use exception handling to ensure no errors
    occur when connecting to the database, and we will show how to close your database connection to prevent
    memory leaks.
-   The tutorial is locate in the 
-   [**t7-exception-handling**](./t7-exception-handling) folder.
+   The tutorial is in the [**t7-exception-handling**](./t7-exception-handling) folder.
 
 :construction:
