@@ -27,17 +27,6 @@ in using **TDD**, you may skip this prerequisite.
     click on the **Open..** menu item, and navigate to the **first_application** folder.
 
 1. Highlight the folder **first_application** in the **Project** window.
-1. Right click on **first_application**, select the menu item **New** and the sub menu **Python File** to
-create a new Python file as is shown below.
-
-    ![t7-create-new-python-file](../images/p7-create-python-file-in-intellij.png)
-
-1. Name the new file **oop-part2.py**.  Your screen should appear like the screenshot below.
-   On the left **Project** window, your python file name is highlighted.  On the right window, your python file
-   contents appear.  This is where you will enter your code for the tutorial.
-
-    ![t3-a-little-oop-file-created](../images/t5-create-python-file-oop-part2.png)
-
 
 ### Catching your First Error
 
