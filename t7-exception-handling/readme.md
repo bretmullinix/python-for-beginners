@@ -11,8 +11,8 @@ memory leaks, even if a failure occurs.
 
 ## Prerequisites
 
-You have finished the [t6-tdd](../t6-tdd/readme.md).  
-This tutorial provides the necessary foundation you need to perform this tutorial.  If you already have a foundation
+You have finished the [t6-tdd](../t6-tdd/readme.md).  This tutorial provides the necessary foundation
+you need to perform this tutorial.  If you already have a foundation
 in using **TDD**, you may skip this prerequisite.
 
 
