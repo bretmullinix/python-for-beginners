@@ -109,9 +109,9 @@ in using **TDD**, you may skip this prerequisite.
     
     As you can see, you have some pre-configured databases listed when you install the MongoDB server.  
     
-Currently, the code is not well written.  You have no exception handling.  If something goes wrong trying to connect
-to your MongoDB server, your application can crash, and since your error happens before you close the MongoDB
-connection, you could still have a MongoDB connection taking up memory.
+Currently, the code is not well written.  The code has no exception handling.  If something goes wrong trying to connect
+to the MongoDB server, the application can crash, and since the error happens before the MongoDB
+connection is closed, the MongoDB connection could still be taking up memory.
     
 ###  Add Exception Handling and Clean up the MongoDB Connection
 
