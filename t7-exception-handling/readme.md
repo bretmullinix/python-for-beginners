@@ -107,9 +107,11 @@ in using **TDD**, you may skip this prerequisite.
    
     ![p7-mongodb-no-exception-handling-success](../images/p7-mongodb-no-exception-handling-success.png)
     
-    As you can see, you have some pre-configured databases listed when you install the MongoDB server.  The
-    code is not quality code.  You have no exception handling if something goes wrong, and if something does
-    go wrong, you are not cleaning up your MongoDB connection.
+    As you can see, you have some pre-configured databases listed when you install the MongoDB server.  
+    
+Currently, the code is not well written.  You have no exception handling.  If something goes wrong, your application
+can crash, and since your error happens before you close the MongoDB connection, you could still have
+a MongoDB connection taking up memory.
     
 ###  Add Exception Handling and Clean up the MongoDB Connection
 
