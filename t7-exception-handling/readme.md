@@ -314,7 +314,7 @@ and contained code with the **try**, **except**, and **finally** blocks.  When t
 **try** block failed, the code in the **except** block determined how to handle the exception
 and recover from the exception if possible.  Despite success or failure of the code in the **try**
 block, the **finally** block code executed.  The **finally** block code always executed after any
-code in the **try** and **finally** blocks.
+code in the **try** and **except** blocks.
    
 We have finished our tutorial on exception handling.  To continue to learn more about Python, 
 please proceed back to the main instructions.
