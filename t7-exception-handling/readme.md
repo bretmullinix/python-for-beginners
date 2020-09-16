@@ -195,7 +195,20 @@ Let's add some exception handling, and if an exception does occur, let's clean u
    Remember, we are coding using **TDD**.  In **TDD**, we must follow the **Red, Green, Refactor (RGR)**
    process.  As a result, we have to prove the test fails.
   
-1. Run the test.  You should see the following failure.
+1. Run the test **test_mongodb_connection_error**.  You should see the following failure.
+
+    ![p7-test-mongo-connection-error-red-in-tdd](../images/p7-test-mongo-connection-error-red-in-tdd.png)
+    
+    Notice the output shows the **MongoException** class does not exist.
+    
+1. Within the Project Explorer, click on the **first_applications** and create the **exceptions** folder.
+
+1. Within the Project Explorer, click on the **exceptions** folder and create the Python file called
+   **mongo_exception.py**.
+   
+1. Open up the **mongo_exception.py** file and add the following code.
+
+
 
 
 
