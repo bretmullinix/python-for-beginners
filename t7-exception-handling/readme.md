@@ -1,6 +1,6 @@
 # Working with Python:  Exception Handling
 
-Last updated: 09.15.2020
+Last updated: 09.16.2020
 
 ## Purpose
 
