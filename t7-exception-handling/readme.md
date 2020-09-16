@@ -117,7 +117,86 @@ connection is closed, the MongoDB connection could still be taking up memory.
 
 Let's add some exception handling, and if an exception does occur, let's clean up the MongoDB connection.
 
-     
+1. Open up a terminal and stop the MongoDB server with the following line:   `docker stop mongodb`
+1. Open up the **errors_and_exceptions.py** file and replace the class definition
+   with the following code.
+   
+     ```python
+        import unittest
+        from unittest.mock import patch
+        import pymongo
+
+        class TestErrorsAndExceptions(unittest.TestCase):
+        
+   
+            mongo_client = None
+   
+            def print_mongodb_databases(self):
+                
+                try:
+                    db_list = mongo_client.list_database_names()
+                    print('Your Mongo databases --->')
+                    for db in db_list:
+                        print('\t' + db)
+                except Exception as exception:
+                    class_and_current_method = __class__ + '.' +  \
+                                           self.print_mongodb_databases.__name__
+                    custom_message = class_and_current_method + \
+                                     "Couldn't retrieve the list of databases"
+                    raise MongoException(custom_message, exception)
+        
+        
+            def test_mongodb_connection_error(self):
+                self.mongo_client = pymongo.MongoClient("mongodb://localhost:15000/")
+                self.assertRaises(MongoException, self.print_mongodb_databases)
+        
+        if __name__ == '__main__':
+            unittest.main()
+    ```
+
+    Let's explain the code:
+    
+    1. The **try:** keyword followed by the **except** keyword is a block of code within the keywords.
+       If the block of code within the keywords throws an error or an exception, the block of code following
+       the `except Exception as exception:` will be processed, so you can gracefully handle the error.
+       
+    1. The line of code `except Exception as exception:` captures the thrown error in the **exception** variable.
+    
+    1. The following code will assign a string to the **class_and_current_method** variable.  The string
+       value with contain the current class name, **.**, and the method name.  The
+       **\** will allow you to continue the current line of code on to the next line.  The assigned string comes
+       from the concatenation of two special variables.  The **\_\_class\_\_** is a special variable in the
+       class which holds the name of the current class as a string.  The variable 
+       **self.print_mongodb_databases.\_\_name\_\_** prints the method name.  The beautiful part of the
+       previous variable is if you **refactor** (rename) the method name, the variable will be refactored to the
+       new method name as well.
+       
+        ```python
+         class_and_current_method = __class__ + '.' +  \
+                                   self.print_mongodb_databases.__name__
+       ```
+      
+      1. The next line of code simply assignes the **class_and_current_name** concatenated with a custom
+         message to the **custom_message** variable.
+         
+      1. The line of code `raise MongoException(custom_message, exception)` throws the exception to the
+         method that called this method.  If the calling method does not handle it, the exception is thrown
+         up the call stack until no other parent methods are available to handle the error.  If this happens,
+         the program/application will crash and will print the output of the error.
+         
+      1. The line of code `self.assertRaises(MongoException, self.print_mongodb_databases)` is a **unittest**
+         method that will call the method **print_mongodb_databases** and ensures the **MongoException**
+         is raised (thrown).  If no exception gets raised, the test fails.  In our case, we set the port
+         of the **mongo_client** variable to **15000**, the MongoDB server does not run on this port so
+         an error should be produced.
+         
+1. The code above purposely was introduced with an error.  The class **MongoException** does not exist.
+   Remember, we are coding using **TDD**.  In **TDD**, we must follow the **Red, Green, Refactor (RGR)**
+   process.  As a result, we have to first prove the test fails.
+   
+1. Run the test.  You should see the following failure.
+
+   
 :construction:
 
 Currently, this tutorial is under construction.  The tutorial should be finished by the end of the week.
