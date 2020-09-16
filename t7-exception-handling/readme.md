@@ -289,7 +289,7 @@ Let's add some exception handling, and if an exception does occur, let's clean u
    
     ![p7-test-mongo-connection-wrong-port](../images/p7-test-mongo-connection-wrong-port.png)
     
-1. Change the port to **27017* and run the test.
+1. Change the port to **27017** and run the test.
 
 1. The test runs successfully, and you are now back in the **Green** in the **RGR** of **TDD**.
 
