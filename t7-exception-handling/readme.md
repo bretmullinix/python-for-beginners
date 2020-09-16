@@ -165,7 +165,7 @@ Let's add some exception handling, and if an exception does occur, let's clean u
     1. The line of code `except Exception as exception:` captures the thrown error in the **exception** variable.
     
     1. The following code will assign a string to the **class_and_current_method** variable.  The string
-       value will contain the current class name, a period, and the method name followed by a colon.  The
+       value will contain the current class name, a period, and the method name.  The
        **\\** continues the current line of code on to the next line.  The assigned string comes
        from the concatenation of two special variables.  The **self.\_\_class\_\_.\_\_name\_\_** is a special 
        variable in the class which holds the name of the current class as a string.  The variable 
