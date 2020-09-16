@@ -122,36 +122,38 @@ Let's add some exception handling, and if an exception does occur, let's clean u
    with the following code.
    
      ```python
-        import unittest
-        from unittest.mock import patch
-        import pymongo
-
-        class TestErrorsAndExceptions(unittest.TestCase):
-        
-   
-            mongo_client = None
-   
-            def print_mongodb_databases(self):
-                
-                try:
-                    db_list = mongo_client.list_database_names()
-                    print('Your Mongo databases --->')
-                    for db in db_list:
-                        print('\t' + db)
-                except Exception as exception:
-                    class_and_current_method = __class__ + '.' +  \
-                                           self.print_mongodb_databases.__name__
-                    custom_message = class_and_current_method + \
-                                     "Couldn't retrieve the list of databases"
-                    raise MongoException(custom_message, exception)
-        
-        
-            def test_mongodb_connection_error(self):
-                self.mongo_client = pymongo.MongoClient("mongodb://localhost:15000/")
-                self.assertRaises(MongoException, self.print_mongodb_databases)
-        
-        if __name__ == '__main__':
-            unittest.main()
+    import unittest
+    from unittest.mock import patch
+    import pymongo
+    
+    
+    class TestErrorsAndExceptions(unittest.TestCase):
+    
+        mongo_client = None
+    
+        def print_mongodb_databases(self):
+            self.assertIsNotNone(self.mongo_client)
+            try:
+                db_list = self.mongo_client.list_database_names()
+                print('Your Mongo databases --->')
+                for db in db_list:
+                    print('\t' + db)
+            except Exception as exception:
+                class_and_current_method = self.__class__.__name__ + '.' + \
+                    self.print_mongodb_databases.__name__
+                custom_message = class_and_current_method + ':  ' +  \
+                                 "Couldn't retrieve the list of databases."
+                raise MongoException(custom_message, exception)
+            finally:
+                if self.mongo_client is not None:
+                    self.mongo_client.close()
+    
+        def test_mongodb_connection_error(self):
+            self.mongo_client = pymongo.MongoClient("mongodb://localhost:15000/")
+            self.assertRaises(MongoException, self.print_mongodb_databases)
+    
+    if __name__ == '__main__':
+        unittest.main()
     ```
 
     Let's explain the code:
@@ -165,15 +167,15 @@ Let's add some exception handling, and if an exception does occur, let's clean u
     1. The following code will assign a string to the **class_and_current_method** variable.  The string
        value will contain the current class name, **.**, and the method name.  The
        **\** continues the current line of code on to the next line.  The assigned string comes
-       from the concatenation of two special variables.  The **\_\_class\_\_** is a special variable in the
-       class which holds the name of the current class as a string.  The variable 
+       from the concatenation of two special variables.  The **self.\_\_class\_\_.\_\_name\_\_** is a special 
+       variable in the class which holds the name of the current class as a string.  The variable 
        **self.print_mongodb_databases.\_\_name\_\_** prints the method name.  The beautiful part of the
        previous variable is if you **refactor** (rename) the method name, the variable will be refactored to the
        new method name as well.  Please make sure you use the **refactor** capability to perform renaming, 
        otherwise, you will have all kinds of referenced code where the renaming isn't performed.
        
         ```python
-         class_and_current_method = __class__ + '.' +  \
+         class_and_current_method = self.__class__.__name__  + '.' +  \
                                    self.print_mongodb_databases.__name__
        ```
       
@@ -184,6 +186,11 @@ Let's add some exception handling, and if an exception does occur, let's clean u
          method that called this method.  If the calling method does not handle it, the exception is thrown
          up the call stack until no other parent methods are available to handle the error.  If this happens,
          the program/application will crash and will print the output of the error.
+         
+      1. The line of code `finally:` is a keyword for the Python **try** block.  If the **try** block 
+         code executes successfully or fails, the indented code under the **finally** keyword will be
+         executed.  In this case, the **Mongo** client resource will be closed regardless of success
+         or an error.  As a result, the resource will not stay around longer than needed. 
          
       1. The line of code `self.assertRaises(MongoException, self.print_mongodb_databases)` is a **unittest**
          method that calls the method **print_mongodb_databases** and ensures the **MongoException**
@@ -210,10 +217,15 @@ Let's add some exception handling, and if an exception does occur, let's clean u
 
     ```python
     class MongoException(Exception):
-        
-        def __init__(self, message, errors):
-            # Call the base class constructor with the parameters it needs
-            super().__init__(message)
+
+       def __init__(self, custom_message, inner_exception):
+           self._custom_message = custom_message
+           self._inner_exception = inner_exception
+
+       def __str__(self):
+           result = self._custom_message + "\n" + \
+           str(self._inner_exception)
+           return result      
     ```
 
     Let's explain the code:
@@ -221,22 +233,90 @@ Let's add some exception handling, and if an exception does occur, let's clean u
     1. The class signature lists the **Exception** class as the parent class indicating that the
        **MongoException** class is an exception.
        
-    1. The line of code `super().__init__(message)` calls the parent **Exception**
-       class constructor passing the custom message.
+    1. The constructor assigns the custom message and exception caused by the system to the
+       private variables **\_custom_message** and **\_inner_exception** respectively.
        
+    1. The **__str__** method will get called to display the error. 
+       
+1. Open the **errors_and_exceptions.py** class and click on the link 
+   **import exceptions.mongo_exception.MongoException(Exception)** as is shown below.
 
+    ![p7-test-mongo-connection-error-red-in-tdd-add-mongo-exception-class](
+    ../images/p7-test-mongo-connection-error-red-in-tdd-add-mongo-exception-class.png)
 
-
-
-
-
+1. Run the test **test_mongodb_connection_error**.  The test succeeds.  We are in the
+   **Green** in the **RGR** of **TDD**.
    
-:construction:
+    ![p7-test-mongo-connection-error-green-in-tdd](
+    ../images/p7-test-mongo-connection-error-green-in-tdd.png)
 
-Currently, this tutorial is under construction.  The tutorial should be finished by the end of the week.
+1. The last step of **RGR** is to look at the code to see if any code needs refactoring.
+   We won't do any refactoring so we have completed the **RGR** process of **TDD**.
 
+1. Add the following test method to the **errors_and_exceptions.py** file.
 
-We have finished our second tutorial on OOP.  To continue to learn more about Python, 
+    ```python
+        def test_mongodb_connection(self):
+            self.assertEqual(1,2)
+   ```
+   
+1. We are forcing a failure or our **Red** in **RGR** of **TDD**.
+
+1. Change the test method to be the following code.
+
+    ```python
+   def test_mongodb_connection(self):
+       try:
+           self.mongo_client = pymongo.MongoClient("mongodb://localhost:15000/")
+           self.print_mongodb_databases()
+       except Exception as exception:
+           print(exception)
+           self.fail("You had an error.")
+    ```
+
+    Most of the lines of code can be explained by the explanation of the **try** and **except** block 
+    above.  We didn't include the **finally** block because the **self.print_mongodb_database()**
+    takes care of closing the mongodb client.
+    
+    Let's explain the new code:
+   
+    1. The line of code **self.fail("You had an error")** calls the **fail** method of the
+       **unittest** framework.  The method will cause the test to fail.  We fail the test because
+       we don't expect a failure for this test.
+
+1. Run the test method.  The test still fails.  The mongo client still uses **15000** instead of
+   **27017**.
+   
+    ![p7-test-mongo-connection-wrong-port](../images/p7-test-mongo-connection-wrong-port.png)
+    
+1. Change the port to **27017* and run the test.
+
+1. The test runs successfully, and you are now back in the **Green** in the **RGR** of **TDD**.
+
+   ![p7-test-mongo-connection-corrected-port-successful](
+   ../images/p7-test-mongo-connection-corrected-port-successful.png)
+   
+
+1. The last step of **RGR** is to look at the code to see if any code needs refactoring.
+   We won't do any refactoring so we have completed the **RGR** process of **TDD**.
+
+1. We are finished with our testing.  Open up a terminal and remove the MongoDb server
+   using the following code:
+   
+    ```commandline
+     docker stop mongodb
+     docker rm mongodb
+    ```
+
+During the testing of the MongoDB connection, we introduced two tests, and the method
+called **print_mongodb_databases**.  The **print_mongodb_database** method was used by both tests
+and contained code with the **try**, **except**, and **finally** blocks.  When the code in the
+**try** block failed, the code in the **except** block determined how to handle the exception
+and recover from the exception if possible.  Despite success or failure of the code in the **try**
+block, the **finally** block code executed.  The **finally** block code always executed after any
+code in the **try** and **finally** blocks.
+   
+We have finished our tutorial on exception handling.  To continue to learn more about Python, 
 please proceed back to the main instructions.
 
 
