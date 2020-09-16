@@ -76,12 +76,15 @@ The tutorials in this repo are as follows:
 
 1. **Incorporating Error/Exception Handling in your Code**
 
-   Certain resources stay in memory longer than needed if they are not closed or disposed after they are used.
-   If the resources stay around in memory and are not being used, your application can crawl to a halt or in
-   some cases crash the computer.  An example we will use in this tutorial is working with **MongoDB**, a NoSQL
-   Document database, hosted in a **Docker** container.  We will use exception handling to ensure no errors
-   occur when connecting to the database, and we will show how to close your database connection to prevent
-   memory leaks.
+   Error handling is vital to keep your application healthy.  If you do not perform error handling,
+   your application can crash, never recover from exceptions that can be handled (such as intermittent
+   network connections), and lead to resource leaks which can take up your computer resources.
+
+   Our tutorial will explore error handling and closing a resource. The examples in this tutorial will be
+   working with **MongoDB**, a NoSQL Document database, hosted in a **Docker** container.  We will use exception 
+   handling to ensure no errors occur when connecting to the database, and we will show how to close your database
+   connection to prevent memory leaks.
+   
    The tutorial is in the [**t7-exception-handling**](./t7-exception-handling) folder.
 
 :construction:
