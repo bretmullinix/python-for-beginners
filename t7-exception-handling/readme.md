@@ -208,6 +208,24 @@ Let's add some exception handling, and if an exception does occur, let's clean u
    
 1. Open up the **mongo_exception.py** file and add the following code.
 
+    ```python
+    class MongoException(Exception):
+        
+        def __init__(self, message, errors):
+            # Call the base class constructor with the parameters it needs
+            super().__init__(message)
+    ```
+
+    Let's explain the code:
+    
+    1. The class signature lists the **Exception** class as the parent class indicating that the
+       **MongoException** class is an exception.
+       
+    1. The line of code `super().__init__(message)` calls the parent **Exception**
+       class constructor passing the custom message.
+       
+
+
 
 
 
